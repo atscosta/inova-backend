@@ -5,6 +5,9 @@ spring:
       database: datajud01
       username: datajud01
       password: datajud_pwd
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
 
 
 
