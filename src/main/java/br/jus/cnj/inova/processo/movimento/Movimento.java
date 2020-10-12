@@ -1,0 +1,21 @@
+
+package br.jus.cnj.inova.processo.movimento;
+
+import br.jus.cnj.inova.processo.capa.OrgaoJulgador;
+import br.jus.cnj.inova.processo.movimento.complemento.ComplementoNacional;
+import java.util.List;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class Movimento {
+
+    private List<ComplementoNacional> complementoNacional;
+    private String dataHora;
+    private String identificadorMovimento;
+    private MovimentoNacional movimentoNacional;
+    private OrgaoJulgador orgaoJulgador;
+
+}
