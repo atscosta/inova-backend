@@ -1,6 +1,7 @@
 
 package br.jus.cnj.inova.processo.capa;
 
+import br.jus.cnj.inova.validations.NumeroProcessoConstraint;
 import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +16,10 @@ public class DadosBasicos {
     private Long dscSistema;
     private String grau;
     private Long nivelSigilo;
+    
+    @NumeroProcessoConstraint
     private String numero;
+    
     private OrgaoJulgador orgaoJulgador;
     private Long procEl;
     private String siglaTribunal;
