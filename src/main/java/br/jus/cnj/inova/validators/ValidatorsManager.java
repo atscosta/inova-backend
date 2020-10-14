@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validators.business;
+package br.jus.cnj.inova.validators;
 
 import java.util.ArrayList;
 import java.util.Collection;
