@@ -13,7 +13,7 @@ import lombok.Data;
 public class Movimento {
 
     private List<ComplementoNacional> complementoNacional;
-    private String dataHora;
+    private String dataHora;// 20180221130534
     private String identificadorMovimento;
     private MovimentoNacional movimentoNacional;
     private OrgaoJulgador orgaoJulgador;

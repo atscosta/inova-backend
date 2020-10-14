@@ -10,7 +10,6 @@ import java.math.BigInteger;
 
 public interface ProcessoRepository extends ReactiveMongoRepository<Processo, String> {
 
-
     @Query("{siglaTribunal : ?0, grau: ?1, 'dadosBasicos.numero': ?2}")
     Flux<Processo> findBySiglaAndGrauAndNumero(String sigal, String grau, String numero);
 
@@ -19,4 +18,3 @@ public interface ProcessoRepository extends ReactiveMongoRepository<Processo, St
     Flux<Processo> findAllBySiglaTribunal(String sigla);
 
 }
-    

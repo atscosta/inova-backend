@@ -17,17 +17,5 @@ public class ResultadoController {
     private final ProcessoService processoService;
     private final ResultadoService resultadoService;
 
-
-    @PostMapping
-    public Mono<Resultado> save(@RequestBody ResultadoTo resultadoTo) {
-
-        return processoService.findById(resultadoTo.getIdProcesso())
-                .log()
-                .map(processo -> new Resultado(processo, resultadoTo.getValidacoes()))
-                .flatMap(resultadoService::save);
-
-    }
-
-
 }
 
