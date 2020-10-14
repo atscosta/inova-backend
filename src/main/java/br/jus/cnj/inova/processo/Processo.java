@@ -5,7 +5,6 @@ import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.movimento.Movimento;
 import java.math.BigInteger;
 import java.util.List;
-
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -20,8 +19,8 @@ public class Processo {
     private BigInteger _id;
     private long millisInsercao;
     private DadosBasicos dadosBasicos;
-    private String grau;
-    private List<Movimento> movimento;
     private String siglaTribunal;
+    private List<Movimento> movimento;
+    private Grau grau;
 
 }
