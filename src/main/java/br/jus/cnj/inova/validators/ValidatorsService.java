@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validators.business;
+package br.jus.cnj.inova.validators;
 
 import br.jus.cnj.inova.processo.Processo;
 import java.util.List;
