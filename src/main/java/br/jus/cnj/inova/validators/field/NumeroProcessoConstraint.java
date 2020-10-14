@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validations;
+package br.jus.cnj.inova.validators.field;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

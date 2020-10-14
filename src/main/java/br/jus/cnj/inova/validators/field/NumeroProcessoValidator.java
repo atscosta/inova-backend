@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validations;
+package br.jus.cnj.inova.validators.field;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
@@ -12,7 +12,6 @@ import org.apache.commons.lang3.StringUtils;
 public class NumeroProcessoValidator implements ConstraintValidator<NumeroProcessoConstraint, String> {
     
     private static final String NPU_PATTERN = "\\d{7}-\\d{2}.\\d{4}.\\d{3}.\\d{4}";
-    private static final int[] SIZES = new int[]{7, 2, 4, 1, 2, 4};
     
     public void initialize(NumeroProcessoConstraint constraint) {
     }
