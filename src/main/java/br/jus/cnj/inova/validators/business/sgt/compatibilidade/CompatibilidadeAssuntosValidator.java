@@ -16,7 +16,7 @@ import reactor.core.publisher.Mono;
 
 import java.util.Objects;
 
-@Validator(type = ValidatorType.CLASSES)
+@Validator(type = ValidatorType.ASSUNTOS)
 @RequiredArgsConstructor
 public class CompatibilidadeAssuntosValidator implements ProcessoValidator {
 
