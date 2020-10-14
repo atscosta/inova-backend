@@ -12,8 +12,6 @@
     <groupId>br.jus.cnj</groupId>
     <artifactId>inova</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>inspect</name>
-    <description>Inspect Data for Datajud</description>
 
     <properties>
         <java.version>14</java.version>
