@@ -21,10 +21,15 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class CompatibilidadeItemValidator {
 
-    private ReactiveSgtClient sgtClient;
-    private DetalhamentoSgtService detalhamentoService;
+    private final ReactiveSgtClient sgtClient;
+    private final DetalhamentoSgtService detalhamentoService;
 
     Flux<ValidationResult> validate(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
+        return this.avaliarPorJustica(unidadeJudiciaria, grau, tipoItem, seqItem);
+    }
+
+    @NotNull
+    private Flux<ValidationResult> avaliarPorJustica(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
         return Flux.combineLatest(
                 this.detalhamentoService.findByJustica(unidadeJudiciaria.getJustica()),
                 this.sgtClient.getArrayDetalhesItem(seqItem, tipoItem),
@@ -40,7 +45,9 @@ public class CompatibilidadeItemValidator {
                 this.detalhamentoService.findByJusticaAndGrau(unidadeJudiciaria.getJustica(), grau),
                 this.sgtClient.getArrayDetalhesItem(seqItem, tipoItem),
                 this::findDetalhamentosCompativeis)
-                .map(compativeis -> compativeis.isEmpty() ? new ValidationResult(Severity.ERROR, "O item não é compatível com o grau do processo.") : new ValidationResult());
+                .map(compativeis -> compativeis.isEmpty() ?
+                        new ValidationResult(Severity.ERROR, "O item não é compatível com o grau do processo.") :
+                        new ValidationResult());
     }
 
     private List<DetalhamentoSgt> findDetalhamentosCompativeis(List<DetalhamentoSgt> detalhamentosDaUnidadeJudiciaria,
