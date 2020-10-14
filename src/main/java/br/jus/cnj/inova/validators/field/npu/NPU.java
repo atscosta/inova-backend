@@ -35,7 +35,7 @@ public class NPU {
         this.setOrigemProcesso(npu);
     }
 
-    private static void validate(String npu) {
+    public static void validate(String npu) {
         if (!isValid(npu)) {
             throw new NPUInvalidoException(npu);
         }

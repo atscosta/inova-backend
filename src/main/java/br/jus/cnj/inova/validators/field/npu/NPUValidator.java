@@ -14,12 +14,12 @@ public class NPUValidator implements ProcessoValidator {
     public ValidationResult validate(Processo processo) {
         final var numeroProcesso = processo.getDadosBasicos().getNumero();
         try {
-            new NPU(numeroProcesso);
-            return new ValidationResult();
+            NPU.validate(numeroProcesso);
         } catch (NPUInvalidoException ex) {
             return new ValidationResult(Severity.ERROR, ex.getMessage());
         } catch (Exception ex) {
             return new ValidationResult(Severity.ERROR, "Número do processo inválido: " + numeroProcesso);
         }
+        return new ValidationResult();
     }
 }
