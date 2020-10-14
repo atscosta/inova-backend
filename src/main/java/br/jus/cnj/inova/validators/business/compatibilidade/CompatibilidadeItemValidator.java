@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validators.compatibilidade;
+package br.jus.cnj.inova.validators.business.compatibilidade;
 
 import br.jus.cnj.inova.detalhamentosgt.DetalhamentoSgt;
 import br.jus.cnj.inova.detalhamentosgt.DetalhamentoSgtService;
@@ -9,9 +9,9 @@ import br.jus.cnj.inova.validators.Severity;
 import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
 import lombok.RequiredArgsConstructor;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Component;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 import java.util.Map;
@@ -25,29 +25,26 @@ public class CompatibilidadeItemValidator {
     private final DetalhamentoSgtService detalhamentoService;
 
     Flux<ValidationResult> validate(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
-        return this.avaliarPorJustica(unidadeJudiciaria, grau, tipoItem, seqItem);
+        return this.avaliarPorJustica(unidadeJudiciaria, tipoItem, seqItem)
+                .flatMap(compativeisJustica -> compativeisJustica.isEmpty() ?
+                        Mono.just(new ValidationResult(Severity.ERROR,
+                                "O item não é compatível com o tipo de justiça da unidade judiciária.")) :
+                        this.avaliarPorGrau(unidadeJudiciaria, grau, tipoItem, seqItem)
+                                .map(this::handleAvaliarPorGrau));
     }
 
-    @NotNull
-    private Flux<ValidationResult> avaliarPorJustica(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
+    private Flux<List<DetalhamentoSgt>> avaliarPorJustica(UnidadeJudiciaria unidadeJudiciaria, TipoItemEnum tipoItem, Long seqItem) {
         return Flux.combineLatest(
                 this.detalhamentoService.findByJustica(unidadeJudiciaria.getJustica()),
                 this.sgtClient.getArrayDetalhesItem(seqItem, tipoItem),
-                this::findDetalhamentosCompativeis)
-                .flatMap(compativeis -> compativeis.isEmpty() ?
-                        Flux.just(new ValidationResult(Severity.ERROR, "O item não é compatível com o tipo de justiça da unidade judiciária.")) :
-                        this.avaliarPorJusticaEGrau(unidadeJudiciaria, grau, tipoItem, seqItem));
+                this::findDetalhamentosCompativeis);
     }
 
-    @NotNull
-    private Flux<ValidationResult> avaliarPorJusticaEGrau(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
+    private Flux<List<DetalhamentoSgt>> avaliarPorGrau(UnidadeJudiciaria unidadeJudiciaria, Grau grau, TipoItemEnum tipoItem, Long seqItem) {
         return Flux.combineLatest(
                 this.detalhamentoService.findByJusticaAndGrau(unidadeJudiciaria.getJustica(), grau),
                 this.sgtClient.getArrayDetalhesItem(seqItem, tipoItem),
-                this::findDetalhamentosCompativeis)
-                .map(compativeis -> compativeis.isEmpty() ?
-                        new ValidationResult(Severity.ERROR, "O item não é compatível com o grau do processo.") :
-                        new ValidationResult());
+                this::findDetalhamentosCompativeis);
     }
 
     private List<DetalhamentoSgt> findDetalhamentosCompativeis(List<DetalhamentoSgt> detalhamentosDaUnidadeJudiciaria,
@@ -55,5 +52,11 @@ public class CompatibilidadeItemValidator {
         return detalhamentosDaUnidadeJudiciaria.stream()
                 .filter(detalhamentoSgt -> "S".equals(detalhamentosDoItem.get(detalhamentoSgt.getKey())))
                 .collect(Collectors.toList());
+    }
+
+    private ValidationResult handleAvaliarPorGrau(List<DetalhamentoSgt> compativeisJusticaEGrau) {
+        return compativeisJusticaEGrau.isEmpty() ?
+                new ValidationResult(Severity.ERROR, "O item não é compatível com o grau do processo.") :
+                new ValidationResult();
     }
 }

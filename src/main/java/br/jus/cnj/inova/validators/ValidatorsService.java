@@ -1,8 +1,9 @@
-package br.jus.cnj.inova.validators.business;
+package br.jus.cnj.inova.validators;
 
 import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.resultados.ResultadosService;
 import java.util.List;
+
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 

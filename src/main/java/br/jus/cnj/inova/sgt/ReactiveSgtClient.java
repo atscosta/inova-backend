@@ -12,6 +12,7 @@ import reactor.core.publisher.Flux;
 import java.time.Duration;
 import java.util.Collection;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class ReactiveSgtClient {
@@ -26,6 +27,9 @@ public class ReactiveSgtClient {
 
     public Flux<Map<String, String>> getArrayDetalhesItem(Long seqItem, TipoItemEnum tipoItem) {
         return Flux.just(this.client.getArrayDetalhesItem(seqItem, tipoItem))
+                .map(map -> Optional.ofNullable(map.get("tipo_item"))
+                        .map(tipo -> map)
+                        .orElseThrow(() -> new ItemSgtNaoEncontradoException(tipoItem, seqItem)))
                 .cache(Duration.ofSeconds(this.cacheTtl));
     }
 
