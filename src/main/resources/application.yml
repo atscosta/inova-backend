@@ -13,5 +13,3 @@ sgt-client:
   enable-logging: true
   timeout: 60000
   cache-ttl: 86400
-
-

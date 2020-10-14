@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.validators.business.compatibilidade;
+package br.jus.cnj.inova.validators.business.sgt.compatibilidade;
 
 import br.jus.cnj.inova.detalhamentosgt.DetalhamentoSgt;
 import br.jus.cnj.inova.detalhamentosgt.DetalhamentoSgtService;
