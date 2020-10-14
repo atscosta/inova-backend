@@ -1,5 +1,6 @@
 package br.jus.cnj.inova.validators;
 
+import br.jus.cnj.inova.validators.compatibilidade.CompatibilidadeClasseValidator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -7,11 +8,9 @@ import org.springframework.context.annotation.Configuration;
 public class ValidatorsConfig {
 
     @Bean
-    ValidatorsManager getValidatorsFactory() {
+    ValidatorsManager getValidatorsFactory(CompatibilidadeClasseValidator compatibilidadeClasseValidator) {
         final var validatorsManager = new ValidatorsManager();
-        validatorsManager.register(ValidatorType.UNIDADE_JUDICIARIA, new PrimeiraValidacao());
-        validatorsManager.register(ValidatorType.UNIDADE_JUDICIARIA, new SegundaValidacao());
-        validatorsManager.register(ValidatorType.UNIDADE_JUDICIARIA, new SegundaValidacao());
+        validatorsManager.register(ValidatorType.CLASSE, compatibilidadeClasseValidator);
         return validatorsManager;
     }
 }
