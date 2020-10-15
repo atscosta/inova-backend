@@ -1,7 +1,7 @@
 package br.jus.cnj.inova.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
-import br.jus.cnj.inova.validators.business.ValidationResult;
+import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;

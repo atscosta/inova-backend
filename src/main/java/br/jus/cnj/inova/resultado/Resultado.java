@@ -1,7 +1,7 @@
 package br.jus.cnj.inova.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
-import br.jus.cnj.inova.validators.business.ValidationResult;
+import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
