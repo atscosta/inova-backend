@@ -1,9 +1,10 @@
-package br.jus.cnj.inova.validators.business;
+package br.jus.cnj.inova.validators;
 
 public enum ValidatorType {
     UNIDADE_JUDICIARIA,
     ASSUNTOS,
     CLASSES,
     MOVIMENTOS,
-    CAMPOS_OBRIGATORIOS
+    FIELD,
+    OUTROS
 }
