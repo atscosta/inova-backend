@@ -19,6 +19,7 @@ public class Processo {
     private BigInteger _id;
     private long millisInsercao;
     private DadosBasicos dadosBasicos;
+    
     private String siglaTribunal;
     private List<Movimento> movimento;
     private Grau grau;
