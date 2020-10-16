@@ -21,6 +21,7 @@ public class Processo {
     private String id;
     private long millisInsercao;
     private DadosBasicos dadosBasicos;
+    
     private String siglaTribunal;
     private List<Movimento> movimento;
     private Grau grau;

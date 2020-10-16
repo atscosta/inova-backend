@@ -21,17 +21,18 @@
 
     <dependencies>
         <dependency>
+            <groupId>br.com.marcellopassos</groupId>
+            <artifactId>sgt-soap-client</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-mongodb-reactive</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-webflux</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>br.com.marcellopassos</groupId>
-            <artifactId>sgt-soap-client</artifactId>
-            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains</groupId>
@@ -56,7 +57,7 @@
             <scope>test</scope>
         </dependency>
 
-<!--    https://www.baeldung.com/spring-mvc-custom-validator -->
+        <!--    https://www.baeldung.com/spring-mvc-custom-validator -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
@@ -68,11 +69,6 @@
             <version>3.11</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.reflections</groupId>
-            <artifactId>reflections</artifactId>
-            <version>0.9.12</version>
-        </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

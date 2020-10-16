@@ -12,11 +12,8 @@ public class ValidatorsConfig {
         final var validatorsManager = new ValidatorsManager();
         context.getBeansWithAnnotation(Validator.class).values().stream()
                 .map(bean -> (ProcessoValidator) bean)
-                .forEach(processoValidator -> validatorsManager.register(this.getValidatorType(processoValidator), processoValidator));
+                .forEach(validatorsManager::register);
         return validatorsManager;
     }
-
-    private ValidatorType getValidatorType(ProcessoValidator processoValidator) {
-        return processoValidator.getClass().getAnnotation(Validator.class).type();
-    }
+    
 }
