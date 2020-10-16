@@ -12,7 +12,8 @@ public class ValidatorsManager {
 
     private final Map<ValidatorType, List<ProcessoValidator>> validatorsMap = new EnumMap<>(ValidatorType.class);
 
-    void register(ValidatorType type, ProcessoValidator validator) {
+    void register(ProcessoValidator validator) {
+        final var type = validator.getValidatorType();
         final List<ProcessoValidator> validatorsList = Optional.ofNullable(this.validatorsMap.get(type))
                 .orElseGet(ArrayList::new);
         validatorsList.add(validator);
