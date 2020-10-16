@@ -5,6 +5,9 @@ spring:
       database: datajud01
       username: datajud01
       password: datajud_pwd
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
 logging:
   level:
     org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG
@@ -13,3 +16,6 @@ sgt-client:
   enable-logging: true
   timeout: 60000
   cache-ttl: 86400
+server:
+  servlet:
+    context-path: cnj-inova
