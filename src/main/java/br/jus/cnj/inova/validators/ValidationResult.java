@@ -29,4 +29,8 @@ public class ValidationResult {
         this.message = message;
         this.causedBy = causedBy;
     }
+
+    public boolean isError() {
+        return !this.success;
+    }
 }

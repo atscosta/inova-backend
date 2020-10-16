@@ -1,17 +1,18 @@
 package br.jus.cnj.inova.detalhamentosgt;
 
 import br.jus.cnj.inova.processo.Grau;
+import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import reactor.core.publisher.Flux;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-public interface DetalhamentoSgtRepository extends ReactiveMongoRepository<DetalhamentoSgt, String> {
+@Repository
+public interface DetalhamentoSgtRepository extends MongoRepository<DetalhamentoSgt, String> {
 
     @Query("{'justicas.codigo': ?0}")
-    Flux<List<DetalhamentoSgt>> findByCodigoJustica(String codigo);
+    List<DetalhamentoSgt> findByCodigoJustica(String codigo);
 
     @Query("{'justicas.codigo': ?0, grau: ?1}")
-    Flux<List<DetalhamentoSgt>> findByCodigoJusticaAndGrau(String codigoJustica, Grau grau);
+    List<DetalhamentoSgt> findByCodigoJusticaAndGrau(String codigoJustica, Grau grau);
 }

@@ -1,11 +1,12 @@
 package br.jus.cnj.inova.unidadejudiciaria;
 
-import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
-import reactor.core.publisher.Flux;
+import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface UnidadeJudiciariaRepository extends ReactiveMongoRepository<UnidadeJudiciaria, String> {
+import java.util.List;
 
-    Flux<UnidadeJudiciaria> findByCodigo(String codigo);
+public interface UnidadeJudiciariaRepository extends MongoRepository<UnidadeJudiciaria, String> {
 
-    Flux<UnidadeJudiciaria> findAllByUf(String uf);
+    UnidadeJudiciaria findByCodigo(String codigo);
+
+    List<UnidadeJudiciaria> findAllByUf();
 }
