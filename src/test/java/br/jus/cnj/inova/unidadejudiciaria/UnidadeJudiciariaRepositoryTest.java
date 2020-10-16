@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import reactor.test.StepVerifier;
 
 @SpringBootTest
-class UnidadeJudiciariaRepositoryTest {
+class  UnidadeJudiciariaRepositoryTest {
 
     @Autowired
     private UnidadeJudiciariaRepository repository;

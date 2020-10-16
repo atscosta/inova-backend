@@ -2,11 +2,13 @@ package br.jus.cnj.inova.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.core.mapping.event.ValidatingMongoEventListener;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
+import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.cors.reactive.CorsUtils;
 import org.springframework.web.reactive.config.EnableWebFlux;
 import org.springframework.web.reactive.config.WebFluxConfigurer;
@@ -43,4 +45,5 @@ public class WebConfiguration implements WebFluxConfigurer {
             return chain.filter(ctx);
         };
     }
+
 }

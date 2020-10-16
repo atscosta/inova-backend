@@ -30,28 +30,6 @@
         </dependency>
 
         <dependency>
-            <groupId>br.com.marcellopassos</groupId>
-            <artifactId>sgt-soap-client</artifactId>
-            <version>1.0</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/sgt-soap-client-1.0.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>exksoap</groupId>
-            <artifactId>exksoap2</artifactId>
-            <version>1.0.3.1</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/exksoap2-1.0.3.1.jar</systemPath>
-        </dependency>
-        <dependency>
-            <groupId>exksoap</groupId>
-            <artifactId>ksoap2-android-assembly</artifactId>
-            <version>3.6.4</version>
-            <scope>system</scope>
-            <systemPath>${project.basedir}/lib/ksoap2-android-assembly-3.6.4.jar</systemPath>
-        </dependency>
-
-        <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>RELEASE</version>
@@ -90,6 +68,30 @@
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
             <version>0.9.12</version>
+        </dependency>
+
+        <!-- Marcello SGT -->
+        <!-- TODO: Add these dependencies into a Maven Repository -->
+        <dependency>
+            <groupId>br.com.marcellopassos</groupId>
+            <artifactId>sgt-soap-client</artifactId>
+            <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/sgt-soap-client-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>exksoap</groupId>
+            <artifactId>exksoap2</artifactId>
+            <version>1.0.3.1</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/exksoap2-1.0.3.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>exksoap</groupId>
+            <artifactId>ksoap2-android-assembly</artifactId>
+            <version>3.6.4</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/libs/ksoap2-android-assembly-3.6.4.jar</systemPath>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
