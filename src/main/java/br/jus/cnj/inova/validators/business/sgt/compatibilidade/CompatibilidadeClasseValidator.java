@@ -10,11 +10,9 @@ import br.jus.cnj.inova.validators.Validator;
 import br.jus.cnj.inova.validators.ValidatorType;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
 import lombok.RequiredArgsConstructor;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
+import lombok.extern.log4j.Log4j2;
 
-import java.util.Collections;
-
+@Log4j2
 @Validator(type = ValidatorType.CLASSES)
 @RequiredArgsConstructor
 public class CompatibilidadeClasseValidator implements ProcessoValidator {
@@ -25,25 +23,22 @@ public class CompatibilidadeClasseValidator implements ProcessoValidator {
     @Override
     public ValidationResult validate(Processo processo) {
         final var codigoOrgao = processo.getDadosBasicos().getOrgaoJulgador().getCodigoOrgao();
-        return this.unidadeJudiciariaService.findByCodigo(String.valueOf(codigoOrgao))
-                .flatMap(unidadeJudiciaria -> this.validate(processo, unidadeJudiciaria))
-                .map(cause -> new ValidationResult(Severity.ERROR,
-                        "A classe não é compatível com a unidade judiciária ou grau do processo.",
-                        Collections.singletonList(cause)))
-                .onErrorResume(this::handleError)
-                .next().block();
+        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(codigoOrgao);
+        return this.validateSingle(processo, unidadeJudiciaria);
     }
 
-    private Flux<ValidationResult> validate(Processo processo, UnidadeJudiciaria unidadeJudiciaria) {
-        return this.compatibilidadeItemValidator.validate(
-                unidadeJudiciaria,
-                processo.getGrau(),
-                TipoItemEnum.CLASSE,
-                processo.getDadosBasicos().getClasseProcessual());
-    }
-
-    private Mono<ValidationResult> handleError(Throwable error) {
-        return Mono.just(new ValidationResult(Severity.ERROR,
-                "Falha ao tentar validar a compatibilidade da classe do processo. Causa: " + error));
+    private ValidationResult validateSingle(Processo processo, UnidadeJudiciaria unidadeJudiciaria) {
+        final var codigoClasse = processo.getDadosBasicos().getClasseProcessual();
+        try {
+            return this.compatibilidadeItemValidator.validate(
+                    unidadeJudiciaria,
+                    processo.getGrau(),
+                    TipoItemEnum.CLASSE,
+                    codigoClasse);
+        } catch (Exception ex) {
+            log.error(ex);
+            return new ValidationResult(Severity.ERROR, "Falha ao tentar validar a classe: " +
+                    codigoClasse + ". Causa: " + ex.getMessage());
+        }
     }
 }
