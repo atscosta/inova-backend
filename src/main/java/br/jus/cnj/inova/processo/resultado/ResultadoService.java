@@ -1,10 +1,12 @@
-package br.jus.cnj.inova.resultado;
+package br.jus.cnj.inova.processo.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
+import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 
@@ -13,6 +15,7 @@ import reactor.core.publisher.Mono;
 public class ResultadoService {
 
     private final ResultadoRepository repository;
+    private final ProcessoService processoService;
 
     public Mono<Resultado> save(Processo processo, ValidationResult validationResult) {
         return this.save(Mono.just(processo), validationResult);
@@ -23,10 +26,13 @@ public class ResultadoService {
                 .flatMap(repository::save);
     }
 
+    public Mono<Resultado> findById(String idProcesso) {
+        return this.repository.findById(idProcesso);
+    }
+
     @NotNull
     private Resultado createResultado(ValidationResult validationResult, Processo processo) {
-        Resultado resultado = new Resultado();
-        resultado.setProcesso(processo);
+        Resultado resultado = new Resultado(processo);
         resultado.addValidation(validationResult);
         return resultado;
     }

@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>br.com.marcellopassos</groupId>
-            <artifactId>sgt-soap-client</artifactId>
+                <artifactId>sgt-soap-client</artifactId>
             <version>1.0</version>
         </dependency>
 
