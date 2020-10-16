@@ -7,17 +7,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
@@ -29,17 +18,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
@@ -50,17 +28,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
@@ -72,17 +39,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
@@ -94,17 +50,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
@@ -116,17 +61,6 @@
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>
-
-        <listeners>
-            <listener>
-                <class>com.baeldung.cachetest.config.CacheEventLogger</class>
-                <event-firing-mode>ASYNCHRONOUS</event-firing-mode>
-                <event-ordering-mode>UNORDERED</event-ordering-mode>
-                <events-to-fire-on>CREATED</events-to-fire-on>
-                <events-to-fire-on>EXPIRED</events-to-fire-on>
-            </listener>
-        </listeners>
-
         <resources>
             <heap unit="entries">2</heap>
             <offheap unit="MB">10</offheap>
