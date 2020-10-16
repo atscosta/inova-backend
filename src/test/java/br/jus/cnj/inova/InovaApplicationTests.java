@@ -1,6 +1,6 @@
 package br.jus.cnj.inova;
 
-import br.jus.cnj.inova.resultados.ResultadosService;
+import br.jus.cnj.inova.resultado.ResultadoService;
 import br.jus.cnj.inova.validators.ValidatorsManager;
 import br.jus.cnj.inova.validators.ValidatorsService;
 import org.junit.jupiter.api.Test;
@@ -14,11 +14,11 @@ class InovaApplicationTests {
     private ValidatorsManager validatorsManager;
     
     @Autowired
-    private ResultadosService resultadosService;
+    private ResultadoService resultadoService;
     
     @Test
     void contextLoads() {
-        ValidatorsService service = new ValidatorsService(validatorsManager, resultadosService);
+        ValidatorsService service = new ValidatorsService(validatorsManager, resultadoService);
         service.getAllValidators().forEach(validator -> System.out.println(validator.getClass().getCanonicalName()));
     }
 }
