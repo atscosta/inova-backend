@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.processo.resultado;
+package br.jus.cnj.inova.resultado;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
