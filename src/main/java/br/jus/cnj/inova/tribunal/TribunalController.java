@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
@@ -17,17 +18,17 @@ public class TribunalController {
     private final TribunalService service;
 
     @GetMapping
-    List<Tribunal> findAll() {
+    Flux<Tribunal> findAll() {
         return this.service.findAll();
     }
 
     @GetMapping(params = "codigoJustica")
-    List<Tribunal> findAll(@RequestParam String codigoJustica) {
+    Flux<Tribunal> findAll(@RequestParam String codigoJustica) {
         return this.service.findByCodigoJustica(codigoJustica);
     }
 
     @GetMapping(params = "uf")
-    List<Tribunal> findByUf(@RequestParam String uf) {
+    Flux<Tribunal> findByUf(@RequestParam String uf) {
         return this.service.findByUf(uf);
     }
 }

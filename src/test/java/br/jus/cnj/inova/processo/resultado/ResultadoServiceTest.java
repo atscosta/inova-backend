@@ -32,6 +32,6 @@ class ResultadoServiceTest {
                 .expectNextCount(1)
                 .expectComplete()
                 .verify();
-
+    
     }
 }
