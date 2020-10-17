@@ -1,16 +1,14 @@
-package br.jus.cnj.inova.processo.resultado;
+package br.jus.cnj.inova.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.capa.OrgaoJulgador;
 import br.jus.cnj.inova.validators.Validation;
-import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
 
