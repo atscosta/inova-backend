@@ -3,6 +3,7 @@ package br.jus.cnj.inova.processo.resultado;
 import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.validators.Severity;
+import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidationResult;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,12 +21,13 @@ class ResultadoServiceTest {
     ResultadoService resultadoService;
 
     @Test
-    void save() {
-        Mono<Processo> pMono = processoService.findAll()
-                .limitRequest(1)
+    void save() { //XXX: Add embedded mongo database
+        Mono<Processo> processoMono = processoService.findAll()
+                .take(1)
                 .single();
 
-        Mono<Resultado> saveResultadoMono = resultadoService.save(pMono, new ValidationResult(Severity.ERROR, "Test Message"));
+        Validation validation = new Validation("Título", "Tipo", new ValidationResult(Severity.ERROR, "Test Message"));
+        Mono<Resultado> saveResultadoMono = resultadoService.save(processoMono, validation);
         StepVerifier.create(saveResultadoMono)
                 .expectNextCount(1)
                 .expectComplete()

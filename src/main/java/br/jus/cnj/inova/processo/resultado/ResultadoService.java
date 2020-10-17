@@ -4,12 +4,15 @@ import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.capa.OrgaoJulgador;
+import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 
@@ -19,12 +22,8 @@ public class ResultadoService {
 
     private final ResultadoRepository repository;
 
-    public Mono<Resultado> save(Processo processo, ValidationResult validationResult) {
-        return this.save(Mono.just(processo), validationResult);
-    }
-
-    public Mono<Resultado> save(Mono<Processo> processo, ValidationResult validationResult) {
-        return processo.map(p -> createResultado(validationResult, p))
+    public Mono<Resultado> save(Mono<Processo> processo, Validation validation) {
+        return processo.map(p -> createResultado(validation, p))
                 .flatMap(repository::save);
     }
 
@@ -32,8 +31,11 @@ public class ResultadoService {
         return this.repository.findById(idProcesso);
     }
 
+    public Flux<Resultado> findAll() {
+        return repository.findAll();
+    }
     @NotNull
-    private Resultado createResultado(ValidationResult validationResult, Processo processo) {
+    private Resultado createResultado(Validation validation, Processo processo) {
         Resultado resultado = new Resultado(processo);
 
         Optional<DadosBasicos> dadosBasicosOptional = Optional.of(processo.getDadosBasicos());
@@ -56,7 +58,7 @@ public class ResultadoService {
         resultado.setCodOrgaoJulgador(codOrgaoJulgador);
         resultado.setSiglaTribunal(processo.getSiglaTribunal());
 
-        resultado.addValidation(validationResult);
+        resultado.addValidation(validation);
         return resultado;
     }
 }
