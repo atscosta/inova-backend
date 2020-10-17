@@ -1,6 +1,7 @@
 package br.jus.cnj.inova.processo.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
+import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -22,13 +23,13 @@ public class Resultado {
     private Long classeProcessual;
     private Long codOrgaoJulgador;
 
-    private Set<ValidationResult> validationResults;
+    private Set<Validation> validationResults;
 
     public Resultado(Processo processo) {
         this.id = processo.getId();
     }
 
-    public void addValidation(ValidationResult result) {
+    public void addValidation(Validation result) {
         if (validationResults == null) {
             this.validationResults = new HashSet<>();
         }
