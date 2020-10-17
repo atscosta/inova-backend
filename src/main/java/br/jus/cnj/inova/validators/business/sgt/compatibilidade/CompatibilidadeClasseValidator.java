@@ -23,7 +23,7 @@ public class CompatibilidadeClasseValidator implements ProcessoValidator {
     @Override
     public ValidationResult validate(Processo processo) {
         final var codigoOrgao = processo.getDadosBasicos().getOrgaoJulgador().getCodigoOrgao();
-        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(codigoOrgao);
+        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(String.valueOf(codigoOrgao));
         return this.validateSingle(processo, unidadeJudiciaria);
     }
 
@@ -40,5 +40,10 @@ public class CompatibilidadeClasseValidator implements ProcessoValidator {
             return new ValidationResult(Severity.ERROR, "Falha ao tentar validar a classe: " +
                     codigoClasse + ". Causa: " + ex.getMessage());
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "A classe do processos deve ser compatível com sua unidade judiciária e grau.";
     }
 }

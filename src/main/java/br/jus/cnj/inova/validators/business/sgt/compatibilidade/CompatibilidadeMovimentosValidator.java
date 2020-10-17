@@ -13,6 +13,7 @@ import br.jus.cnj.inova.validators.ValidatorType;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
 import lombok.RequiredArgsConstructor;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -27,7 +28,7 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     @Override
     public ValidationResult validate(Processo processo) {
         final var codigoOrgao = processo.getDadosBasicos().getOrgaoJulgador().getCodigoOrgao();
-        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(codigoOrgao);
+        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(String.valueOf(codigoOrgao));
         final var errors = getErrors(processo, unidadeJudiciaria);
         return errors.isEmpty() ?
                 new ValidationResult() :
@@ -35,6 +36,10 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     }
 
     private List<ValidationResult> getErrors(Processo processo, UnidadeJudiciaria unidadeJudiciaria) {
+        if (Objects.isNull(processo.getMovimento())) {
+            return Collections.singletonList(new ValidationResult(Severity.ERROR,
+                    "O processo não possui movimentações."));
+        }
         return processo.getMovimento().stream()
                 .map(Movimento::getMovimentoNacional)
                 .filter(Objects::nonNull)
@@ -55,5 +60,10 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
             return new ValidationResult(Severity.ERROR, "Falha ao tentar validar o movimento: " +
                     codigoMovimento + ". Causa: " + ex.getMessage());
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "Todos os movimentos do processos devem ser compatíveis com sua unidade judiciária e grau.";
     }
 }

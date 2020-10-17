@@ -26,7 +26,7 @@ public class CompatibilidadeAssuntosValidator implements ProcessoValidator {
     @Override
     public ValidationResult validate(Processo processo) {
         final var codigoOrgao = processo.getDadosBasicos().getOrgaoJulgador().getCodigoOrgao();
-        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(codigoOrgao);
+        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(String.valueOf(codigoOrgao));
         final var errors = getErrors(processo, unidadeJudiciaria);
         return errors.isEmpty() ?
                 new ValidationResult() :
@@ -53,5 +53,10 @@ public class CompatibilidadeAssuntosValidator implements ProcessoValidator {
             return new ValidationResult(Severity.ERROR, "Falha ao tentar validar o assunto: " +
                     codigoAssunto + ". Causa: " + ex.getMessage());
         }
+    }
+
+    @Override
+    public String getTitle() {
+        return "Todos os assuntos do processos devem ser compatíveis com sua unidade judiciária e grau.";
     }
 }

@@ -22,4 +22,9 @@ public class NPUValidator implements ProcessoValidator {
         }
         return new ValidationResult();
     }
+
+    @Override
+    public String getTitle() {
+        return "O número do processo deve ser válido.";
+    }
 }
