@@ -28,7 +28,7 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     @Override
     public ValidationResult validate(Processo processo) {
         final var codigoOrgao = processo.getDadosBasicos().getOrgaoJulgador().getCodigoOrgao();
-        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(codigoOrgao);
+        final var unidadeJudiciaria = this.unidadeJudiciariaService.findByCodigo(String.valueOf(codigoOrgao));
         final var errors = getErrors(processo, unidadeJudiciaria);
         return errors.isEmpty() ?
                 new ValidationResult() :

@@ -9,4 +9,6 @@ public interface UnidadeJudiciariaRepository extends MongoRepository<UnidadeJudi
     UnidadeJudiciaria findByCodigo(String codigo);
 
     List<UnidadeJudiciaria> findAllByUf();
+
+    List<UnidadeJudiciaria> findAllByTribunalCodigo(String codigoTribunal);
 }
