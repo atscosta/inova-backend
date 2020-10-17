@@ -1,18 +1,15 @@
 package br.jus.cnj.inova.processo.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
-import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.capa.OrgaoJulgador;
 import br.jus.cnj.inova.validators.Validation;
-import br.jus.cnj.inova.validators.ValidationResult;
 import lombok.RequiredArgsConstructor;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
-import javax.validation.Valid;
 import java.util.Optional;
 
 
