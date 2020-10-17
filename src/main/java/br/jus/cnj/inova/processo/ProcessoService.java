@@ -16,11 +16,11 @@ public class ProcessoService {
         return repository.findAll();
     }
 
-    public Flux<Processo> findAllBySigla(String sigla) {
+    public Flux<Processo> findAllBySigla(Mono<String> sigla) {
         return repository.findAllBySiglaTribunal(sigla);
     }
 
-    public Flux<Processo> findAllByUnidadeJudiciaria(Integer codUnidadeJudiciaria) {
+    public Flux<Processo> findAllByUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria) {
         return repository.findAllByUnidadeJudiciaria(codUnidadeJudiciaria);
     }
 
