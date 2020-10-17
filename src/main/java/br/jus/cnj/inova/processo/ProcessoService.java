@@ -1,13 +1,9 @@
 package br.jus.cnj.inova.processo;
 
 import lombok.RequiredArgsConstructor;
-import org.bson.types.ObjectId;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-
-import java.math.BigInteger;
 
 
 @Service

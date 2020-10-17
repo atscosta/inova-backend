@@ -17,6 +17,10 @@ public class Resultado {
 
     @Id
     private String id;
+    private String numero;
+    private String siglaTribunal;
+    private Long classeProcessual;
+    private Long codOrgaoJulgador;
 
     private Set<ValidationResult> validationResults;
 
