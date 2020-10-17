@@ -26,4 +26,9 @@ public class ProcessoPossuiMovimentacoesValidator implements ProcessoValidator {
     public String getTitle() {
         return "O processo deve possuir mais de uma movimentação";
     }
+    
+    @Override
+    public String getName() {
+        return "ProcessoPossuiMovimentacoes";
+    }
 }

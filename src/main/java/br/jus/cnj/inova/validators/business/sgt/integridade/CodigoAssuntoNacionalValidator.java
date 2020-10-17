@@ -36,4 +36,9 @@ public class CodigoAssuntoNacionalValidator extends AbstractAssuntosValidator im
     public String getTitle() {
         return "Todos os assuntos do processo devem estar associados ao código de algum assunto nacional normatizado.";
     }
+    
+    @Override
+    public String getName() {
+        return "CodigoAssuntoNacional";
+    }
 }

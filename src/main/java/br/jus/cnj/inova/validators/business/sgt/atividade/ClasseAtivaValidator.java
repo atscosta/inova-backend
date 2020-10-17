@@ -23,4 +23,9 @@ public class ClasseAtivaValidator implements ProcessoValidator {
     public String getTitle() {
         return "A classe do processo deve estar ativa.";
     }
+    
+    @Override
+    public String getName() {
+        return "ClasseAtiva";
+    }
 }

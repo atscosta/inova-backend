@@ -34,7 +34,12 @@ public class DataMovimentoValidator extends AbstractMovimentosValidator implemen
     public String getTitle() {
         return "A data de todos os movimentos deve ser uma data válida e anterior à data atual.";
     }
-
+    
+    @Override
+    public String getName() {
+        return "DataMovimento";
+    }
+    
     @Override
     protected String getErrorMessage() {
         return "Alguma das movimentações do processo possui data inválida.";

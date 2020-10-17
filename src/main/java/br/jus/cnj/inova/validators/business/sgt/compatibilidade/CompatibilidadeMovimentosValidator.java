@@ -66,4 +66,9 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     public String getTitle() {
         return "Todos os movimentos do processos devem ser compatíveis com sua unidade judiciária e grau.";
     }
+    
+    @Override
+    public String getName() {
+        return "CompatibilidadeMovimentos";
+    }
 }

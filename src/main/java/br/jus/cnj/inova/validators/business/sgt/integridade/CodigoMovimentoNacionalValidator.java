@@ -29,7 +29,12 @@ public class CodigoMovimentoNacionalValidator extends AbstractMovimentosValidato
     public String getTitle() {
         return "Todos os movimentos do processo devem estar associados ao código de algum movimento nacional normatizado.";
     }
-
+    
+    @Override
+    public String getName() {
+        return "CodigoMovimentoNacional";
+    }
+    
     @Override
     protected String getErrorMessage() {
         return "Alguma das movimentações do processo não está associada a um código nacional válido.";
