@@ -16,6 +16,7 @@ public class Movimento {
     private String dataHora;// 20180221130534
     private String identificadorMovimento;
     private MovimentoNacional movimentoNacional;
+    private MovimentoLocal movimentoLocal;
     private OrgaoJulgador orgaoJulgador;
 
 }
