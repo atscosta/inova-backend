@@ -10,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Scheduler;
+import reactor.core.scheduler.Schedulers;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,12 +28,12 @@ public class ResultadoService {
     private final ValidatorsManager validatorsManager;
 
     public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria) {
-        return validateByCodigoUnidadeJudiciaria(codUnidadeJudiciaria, Optional.empty());
+        return validateByCodigoUnidadeJudiciaria(codUnidadeJudiciaria, null);
     }
 
-    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria, Optional<ValidatorType> validatorType) {
+    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria, ValidatorType validatorType) {
 
-        List<ProcessoValidator> pValidators = validatorType
+        List<ProcessoValidator> pValidators = Optional.of(validatorType)
                 .map(this.validatorsManager::getValidatorsByType)
                 .orElse(this.validatorsManager.getAllValidators());
 
@@ -63,7 +65,7 @@ public class ResultadoService {
 
 
     public Flux<Resultado> processar(FiltroResultadoTO filtro) {
-        return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()));
+        return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()), ValidatorType.MOVIMENTOS);
 
     }
 }

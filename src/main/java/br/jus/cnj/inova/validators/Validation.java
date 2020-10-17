@@ -14,7 +14,7 @@ public class Validation {
     private ValidationResult result;
 
     public Validation(ProcessoValidator validator, ValidationResult result) {
-        this.title = validator.getClass().getName();
+        this.title = validator.getTitle();
         this.type = validator.getValidatorType();
         this.result = result;
     }
