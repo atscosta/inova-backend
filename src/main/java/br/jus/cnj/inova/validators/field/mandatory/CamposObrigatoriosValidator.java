@@ -32,4 +32,9 @@ public class CamposObrigatoriosValidator implements ProcessoValidator {
     public ValidatorType getValidatorType() {
         return ValidatorType.FIELD;
     }
+
+    @Override
+    public String getTitle() {
+        return "Campos obrigatórios devem estar preenchidos.";
+    }
 }

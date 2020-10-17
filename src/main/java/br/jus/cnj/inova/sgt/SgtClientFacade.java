@@ -61,6 +61,14 @@ public class SgtClientFacade {
         return this.client.getComplementoMovimento(codMovimento);
     }
 
+    public int getNivel(Long seqItem, TipoItemEnum tipoItem) {
+        return this.getStringPaisItem(seqItem, tipoItem).size() + 1;
+    }
+
+    public boolean isUltimoNivel(Long seqItem, TipoItemEnum tipoItem) {
+        return this.getArrayFilhosItem(seqItem, tipoItem).isEmpty();
+    }
+
     public LocalDate getDataUltimaVersao() {
         return this.client.getDataUltimaVersao();
     }

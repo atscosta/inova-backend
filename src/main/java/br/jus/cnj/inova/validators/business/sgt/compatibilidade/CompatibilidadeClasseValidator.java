@@ -41,4 +41,9 @@ public class CompatibilidadeClasseValidator implements ProcessoValidator {
                     codigoClasse + ". Causa: " + ex.getMessage());
         }
     }
+
+    @Override
+    public String getTitle() {
+        return "A classe do processos deve ser compatível com sua unidade judiciária e grau.";
+    }
 }

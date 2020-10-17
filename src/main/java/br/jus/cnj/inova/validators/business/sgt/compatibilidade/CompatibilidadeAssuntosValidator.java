@@ -54,4 +54,9 @@ public class CompatibilidadeAssuntosValidator implements ProcessoValidator {
                     codigoAssunto + ". Causa: " + ex.getMessage());
         }
     }
+
+    @Override
+    public String getTitle() {
+        return "Todos os assuntos do processos devem ser compatíveis com sua unidade judiciária e grau.";
+    }
 }
