@@ -1,6 +1,5 @@
 package br.jus.cnj.inova.validators;
 
-<<<<<<< HEAD
 import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.processo.resultado.Resultado;
@@ -9,11 +8,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-=======
-import lombok.RequiredArgsConstructor;
-
-import java.util.List;
->>>>>>> 0f29c97888cd02ce40b3f361411a43c184008c9e
 
 import java.util.List;
 import java.util.Optional;
@@ -25,7 +19,6 @@ import java.util.stream.Collectors;
 public class ValidatorsService {
 
     private final ValidatorsManager validatorsManager;
-<<<<<<< HEAD
     private final ProcessoService processoService;
     private final ResultadoService resultadoService;
 
@@ -46,11 +39,6 @@ public class ValidatorsService {
                 .collect(Collectors.toSet());
 
         return resultadoService.save(processo, validations);
-=======
-
-    public List<ProcessoValidator> getAllValidators(){
-        return this.validatorsManager.getAllValidators();
->>>>>>> 0f29c97888cd02ce40b3f361411a43c184008c9e
     }
 
 
