@@ -23,4 +23,8 @@ public class TribunalService {
     List<Tribunal> findByUf(String uf) {
         return this.repository.findByUf(uf);
     }
+
+    public Tribunal findByCodigo(String codigo) {
+        return this.repository.findFirstByCodigo(codigo);
+    }
 }

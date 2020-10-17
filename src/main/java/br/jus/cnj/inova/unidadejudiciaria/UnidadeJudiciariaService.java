@@ -16,6 +16,6 @@ public class UnidadeJudiciariaService {
     }
 
     public List<UnidadeJudiciaria> findByCodigoTribunal(String codigoTribunal) {
-        return this.repository.findAllByTribunalCodigo(codigoTribunal);
+        return this.repository.findAllByTribunalCodigoOrderByUnidadeJudiciaria(codigoTribunal);
     }
 }

@@ -7,6 +7,8 @@ import java.util.List;
 
 public interface TribunalRepository extends MongoRepository<Tribunal, String> {
 
+    Tribunal findFirstByCodigo(String codigo);
+
     @Query("{'justicas.codigo': ?0}")
     List<Tribunal> findByCodigoJustica(String codigoJustica);
 
