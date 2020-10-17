@@ -3,6 +3,7 @@ package br.jus.cnj.inova.tribunal;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,6 +17,11 @@ import java.util.List;
 public class TribunalController {
 
     private final TribunalService service;
+
+    @GetMapping("{codigo}")
+    public Tribunal findByCodigo(@PathVariable String codigo) {
+        return this.service.findByCodigo(codigo);
+    }
 
     @GetMapping
     Flux<Tribunal> findAll() {

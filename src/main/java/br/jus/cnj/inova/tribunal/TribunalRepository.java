@@ -7,6 +7,8 @@ import reactor.core.publisher.Mono;
 
 public interface TribunalRepository extends ReactiveMongoRepository<Tribunal, String> {
 
+    Tribunal findFirstByCodigo(String codigo);
+
     @Query("{'justicas.codigo': ?0}")
     Flux<Tribunal> findByCodigoJustica(String codigoJustica);
 
