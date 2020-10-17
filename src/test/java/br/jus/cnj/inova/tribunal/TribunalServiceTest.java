@@ -27,7 +27,7 @@ class TribunalServiceTest {
     @Test
     void findBySigla() {
 
-        final var tribunalMono = tribunalService.findBySigla("TRT13")
+        final var tribunalMono = tribunalService.findBySigla(Mono.just("TRT13"))
                 .map(Tribunal::getId);
 
         StepVerifier.create(tribunalMono.log())

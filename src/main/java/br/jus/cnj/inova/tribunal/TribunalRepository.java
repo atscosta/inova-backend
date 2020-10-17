@@ -13,5 +13,5 @@ public interface TribunalRepository extends ReactiveMongoRepository<Tribunal, St
     @Query("{ufs: ?0}")
     Flux<Tribunal> findByUf(String uf);
 
-    Mono<Tribunal> findBySigla(String sigla);
+    Mono<Tribunal> findBySigla(Mono<String> sigla);
 }

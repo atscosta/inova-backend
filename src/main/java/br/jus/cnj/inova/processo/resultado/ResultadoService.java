@@ -14,6 +14,7 @@ import reactor.core.publisher.Mono;
 
 import javax.validation.Valid;
 import java.util.Optional;
+import java.util.Set;
 
 
 @Service
@@ -22,8 +23,12 @@ public class ResultadoService {
 
     private final ResultadoRepository repository;
 
-    public Mono<Resultado> save(Mono<Processo> processo, Validation validation) {
-        return processo.map(p -> createResultado(validation, p))
+    public Mono<Resultado> save(Processo processo, Set<Validation> validations) {
+        return this.save(Mono.just(processo), validations);
+    }
+
+    public Mono<Resultado> save(Mono<Processo> processoMono, Set<Validation> validations) {
+        return processoMono.map(p -> new Resultado(p, validations))
                 .flatMap(repository::save);
     }
 
@@ -34,31 +39,5 @@ public class ResultadoService {
     public Flux<Resultado> findAll() {
         return repository.findAll();
     }
-    @NotNull
-    private Resultado createResultado(Validation validation, Processo processo) {
-        Resultado resultado = new Resultado(processo);
 
-        Optional<DadosBasicos> dadosBasicosOptional = Optional.of(processo.getDadosBasicos());
-
-        final String numeroProcesso = dadosBasicosOptional
-                .map(DadosBasicos::getNumero)
-                .orElse(null);
-
-        final Long codClasse = dadosBasicosOptional
-                .map(DadosBasicos::getClasseProcessual)
-                .orElse(null);
-
-        final Long codOrgaoJulgador = dadosBasicosOptional
-                .map(DadosBasicos::getOrgaoJulgador)
-                .map(OrgaoJulgador::getCodigoOrgao)
-                .orElse(null);
-
-        resultado.setClasseProcessual(codClasse);
-        resultado.setNumero(numeroProcesso);
-        resultado.setCodOrgaoJulgador(codOrgaoJulgador);
-        resultado.setSiglaTribunal(processo.getSiglaTribunal());
-
-        resultado.addValidation(validation);
-        return resultado;
-    }
 }

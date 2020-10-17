@@ -24,7 +24,7 @@ public class TribunalService {
         return this.repository.findByUf(uf);
     }
 
-    Mono<Tribunal> findBySigla(String sigla) {
+    public Mono<Tribunal> findBySigla(Mono<String> sigla) {
         return this.repository.findBySigla(sigla);
     }
 }
