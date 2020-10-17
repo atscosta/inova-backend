@@ -1,8 +1,6 @@
 package br.jus.cnj.inova.validators.business.sgt.integridade;
 
 import br.jus.cnj.inova.processo.movimento.Movimento;
-import br.jus.cnj.inova.processo.movimento.MovimentoLocal;
-import br.jus.cnj.inova.processo.movimento.MovimentoNacional;
 import br.jus.cnj.inova.validators.ProcessoValidator;
 import br.jus.cnj.inova.validators.Severity;
 import br.jus.cnj.inova.validators.ValidationResult;
@@ -13,8 +11,6 @@ import br.jus.cnj.inova.validators.business.sgt.atividade.AtividadeItemValidator
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
 import lombok.RequiredArgsConstructor;
 
-import java.util.Optional;
-
 @Validator(type = ValidatorType.MOVIMENTOS)
 @RequiredArgsConstructor
 public class CodigoMovimentoNacionalValidator extends AbstractMovimentosValidator implements ProcessoValidator {
@@ -23,10 +19,7 @@ public class CodigoMovimentoNacionalValidator extends AbstractMovimentosValidato
 
     @Override
     protected ValidationResult validateMovimento(Movimento movimento) {
-        return Optional.ofNullable(movimento.getMovimentoNacional())
-                .map(MovimentoNacional::getCodigoNacional)
-                .or(() -> Optional.ofNullable(movimento.getMovimentoLocal())
-                        .map(MovimentoLocal::getCodigoPaiNacional))
+        return this.getCodigoMovimentoNacional(movimento)
                 .map(codigoMovimentoNacional -> this.atividadeValidator.validate(TipoItemEnum.MOVIMENTO, codigoMovimentoNacional))
                 .orElse(new ValidationResult(Severity.ERROR, "O movimento " +
                         movimento.getIdentificadorMovimento() + " não está associado a nenhum movimento nacional"));
