@@ -16,7 +16,7 @@ public class ProcessoPossuiMovimentacoesValidator implements ProcessoValidator {
 
     @Override
     public ValidationResult validate(Processo processo) {
-        return Optional.ofNullable(processo.getMovimento())
+        return Optional.ofNullable(processo.getMovimentoList())
                 .filter(Predicate.not(Collection::isEmpty))
                 .map(movimentos -> new ValidationResult())
                 .orElse(new ValidationResult(Severity.ERROR, "O processo não possui movimentações."));

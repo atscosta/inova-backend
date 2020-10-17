@@ -5,9 +5,10 @@ import br.jus.cnj.inova.validators.ProcessoValidator;
 import br.jus.cnj.inova.validators.Severity;
 import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.cnj.inova.validators.Validator;
+import br.jus.cnj.inova.validators.ValidatorPriority;
 import br.jus.cnj.inova.validators.ValidatorType;
 
-@Validator(type = ValidatorType.FIELD)
+@Validator(type = ValidatorType.FIELD, priority = ValidatorPriority.HIGH)
 public class CamposObrigatoriosValidator implements ProcessoValidator {
     
     protected ValidationResult validate(Processo processo, Object campo, String nomeCampo) {

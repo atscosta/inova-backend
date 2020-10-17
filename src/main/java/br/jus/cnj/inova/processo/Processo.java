@@ -3,14 +3,11 @@ package br.jus.cnj.inova.processo;
 
 import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.movimento.Movimento;
-import java.math.BigInteger;
 import java.util.List;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -23,7 +20,7 @@ public class Processo {
     private DadosBasicos dadosBasicos;
     
     private String siglaTribunal;
-    private List<Movimento> movimento;
+    private List<Movimento> movimentoList;
     private Grau grau;
 
 }

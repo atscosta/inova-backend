@@ -8,12 +8,11 @@ import br.jus.cnj.inova.unidadejudiciaria.UnidadeJudiciaria;
 import br.jus.cnj.inova.validators.Severity;
 import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Component;
-
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 
 @Component
 @RequiredArgsConstructor
