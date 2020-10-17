@@ -3,8 +3,8 @@ package br.jus.cnj.inova.tribunal;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
@@ -12,15 +12,19 @@ public class TribunalService {
 
     private final TribunalRepository repository;
 
-    List<Tribunal> findAll() {
+    Flux<Tribunal> findAll() {
         return this.repository.findAll();
     }
 
-    List<Tribunal> findByCodigoJustica(String codigoJustica) {
+    Flux<Tribunal> findByCodigoJustica(String codigoJustica) {
         return this.repository.findByCodigoJustica(codigoJustica);
     }
 
-    List<Tribunal> findByUf(String uf) {
+    Flux<Tribunal> findByUf(String uf) {
         return this.repository.findByUf(uf);
+    }
+
+    public Mono<Tribunal> findBySigla(Mono<String> sigla) {
+        return this.repository.findBySigla(sigla);
     }
 }
