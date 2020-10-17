@@ -3,7 +3,7 @@ package br.jus.cnj.inova.validators;
 import br.jus.cnj.inova.processo.Processo;
 import java.util.List;
 
-import br.jus.cnj.inova.resultado.ResultadoService;
+import br.jus.cnj.inova.processo.resultado.ResultadoService;
 import lombok.RequiredArgsConstructor;
 import reactor.core.publisher.Flux;
 

@@ -22,7 +22,7 @@
     <dependencies>
         <dependency>
             <groupId>br.com.marcellopassos</groupId>
-            <artifactId>sgt-soap-client</artifactId>
+                <artifactId>sgt-soap-client</artifactId>
             <version>1.0</version>
         </dependency>
 
@@ -41,7 +41,7 @@
         <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
-            <version>RELEASE</version>
+            <version>20.1.0</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

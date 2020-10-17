@@ -1,4 +1,4 @@
-package br.jus.cnj.inova.resultado;
+package br.jus.cnj.inova.processo.resultado;
 
 import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.ProcessoService;

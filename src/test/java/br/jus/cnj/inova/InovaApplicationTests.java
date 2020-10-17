@@ -1,6 +1,6 @@
 package br.jus.cnj.inova;
 
-import br.jus.cnj.inova.resultado.ResultadoService;
+import br.jus.cnj.inova.processo.resultado.ResultadoService;
 import br.jus.cnj.inova.validators.ValidatorsManager;
 import br.jus.cnj.inova.validators.ValidatorsService;
 import org.junit.jupiter.api.Test;
