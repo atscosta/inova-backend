@@ -8,8 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Flux;
-
-import java.util.List;
+import reactor.core.publisher.Mono;
 
 @RestController
 @RequiredArgsConstructor
@@ -19,22 +18,22 @@ public class TribunalController {
     private final TribunalService service;
 
     @GetMapping("{codigo}")
-    public Tribunal findByCodigo(@PathVariable String codigo) {
+    public Mono<Tribunal> findByCodigo(@PathVariable String codigo) {
         return this.service.findByCodigo(codigo);
     }
 
     @GetMapping
-    Flux<Tribunal> findAll() {
+    public Flux<Tribunal> findAll() {
         return this.service.findAll();
     }
 
     @GetMapping(params = "codigoJustica")
-    Flux<Tribunal> findAll(@RequestParam String codigoJustica) {
+    public Flux<Tribunal> findAll(@RequestParam String codigoJustica) {
         return this.service.findByCodigoJustica(codigoJustica);
     }
 
     @GetMapping(params = "uf")
-    Flux<Tribunal> findByUf(@RequestParam String uf) {
+    public Flux<Tribunal> findByUf(@RequestParam String uf) {
         return this.service.findByUf(uf);
     }
 }

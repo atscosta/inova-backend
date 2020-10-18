@@ -8,11 +8,14 @@ import reactor.core.publisher.Mono;
 
 public interface ProcessoRepository extends ReactiveMongoRepository<Processo, String> {
 
+    Mono<Long> countByDadosBasicosOrgaoJulgadorCodigoOrgao(String codigoOrgao);
+
     @Query("{siglaTribunal : ?0, grau: ?1, 'dadosBasicos.numero': ?2}")
     Flux<Processo> findBySiglaAndGrauAndNumero(String sigal, String grau, String numero);
 
     @Query("{'dadosBasicos.orgaoJulgador.codigoOrgao': ?0}")
     Flux<Processo> findAllByUnidadeJudiciaria(Mono<Long> codigoUnidadeJudiciaria);
+
     Flux<Processo> findAllBySiglaTribunal(Mono<String> sigla);
 
 }
