@@ -28,7 +28,7 @@ public interface ProcessoValidator {
     
     default void setEnabled(Boolean enabled) {
         final var annotation = this.getClass().getAnnotation(Validator.class);
-        changeAnnotationValue(annotation, enabled);
+        changeAnnotationValue(annotation, "enabled", enabled);
     }
     
     /**
@@ -37,12 +37,12 @@ public interface ProcessoValidator {
      */
     @SneakyThrows
     @SuppressWarnings("unchecked")
-    private static void changeAnnotationValue(Annotation annotation, @NotNull Boolean newValue) {
+    private static void changeAnnotationValue(Annotation annotation, String key, @NotNull Boolean newValue) {
         Object handler = Proxy.getInvocationHandler(annotation);
         Field f = handler.getClass().getDeclaredField("memberValues");
         f.setAccessible(true);
         Map<String, Object> memberValues = (Map<String, Object>) f.get(handler);
-        memberValues.put("value", newValue);
+        memberValues.put(key, newValue);
     }
     
 }

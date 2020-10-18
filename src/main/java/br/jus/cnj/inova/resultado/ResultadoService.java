@@ -6,17 +6,15 @@ import br.jus.cnj.inova.validators.ProcessoValidator;
 import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidatorType;
 import br.jus.cnj.inova.validators.ValidatorsManager;
-import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
-import reactor.core.publisher.Flux;
-import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Scheduler;
-import reactor.core.scheduler.Schedulers;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+import lombok.RequiredArgsConstructor;
+import org.jetbrains.annotations.Nullable;
+import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 
 @Service
@@ -31,9 +29,10 @@ public class ResultadoService {
         return validateByCodigoUnidadeJudiciaria(codUnidadeJudiciaria, null);
     }
 
-    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria, ValidatorType validatorType) {
+    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria,
+        @Nullable ValidatorType validatorType) {
 
-        List<ProcessoValidator> pValidators = Optional.of(validatorType)
+        List<ProcessoValidator> pValidators = Optional.ofNullable(validatorType)
                 .map(this.validatorsManager::getValidatorsByType)
                 .orElse(this.validatorsManager.getAllValidators());
 
@@ -63,9 +62,7 @@ public class ResultadoService {
         return this.repository.findById(idProcesso);
     }
 
-
     public Flux<Resultado> processar(FiltroResultadoTO filtro) {
         return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()), ValidatorType.MOVIMENTOS);
-
     }
 }

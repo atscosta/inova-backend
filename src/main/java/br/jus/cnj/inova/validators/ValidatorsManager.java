@@ -7,9 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
-import org.springframework.stereotype.Component;
 
-@Component
 public class ValidatorsManager {
 
     private final Map<ValidatorType, List<ProcessoValidator>> validatorsMap = new EnumMap<>(ValidatorType.class);

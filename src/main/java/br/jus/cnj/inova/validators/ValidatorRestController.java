@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/validadores")
-@RequiredArgsConstructor
 public class ValidatorRestController {
 
     private final ValidatorService service;
@@ -32,6 +32,11 @@ public class ValidatorRestController {
     @PutMapping("/{name}")
     public void listarHabilitados(@PathVariable String name, @RequestParam Boolean enabled) {
         this.service.enableValidator(name, enabled);
+    }
+    
+    @GetMapping("/{name}")
+    public ProcessoValidator listarPorTipo(@PathVariable String name) {
+        return this.service.findOneByName(name);
     }
     
     @GetMapping(params = "type")
