@@ -36,11 +36,11 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     }
 
     private List<ValidationResult> getErrors(Processo processo, UnidadeJudiciaria unidadeJudiciaria) {
-        if (Objects.isNull(processo.getMovimento())) {
+        if (Objects.isNull(processo.getMovimentoList())) {
             return Collections.singletonList(new ValidationResult(Severity.ERROR,
                     "O processo não possui movimentações."));
         }
-        return processo.getMovimento().stream()
+        return processo.getMovimentoList().stream()
                 .map(Movimento::getMovimentoNacional)
                 .filter(Objects::nonNull)
                 .map(MovimentoNacional::getCodigoNacional)
@@ -65,5 +65,10 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     @Override
     public String getTitle() {
         return "Todos os movimentos do processos devem ser compatíveis com sua unidade judiciária e grau.";
+    }
+    
+    @Override
+    public String getName() {
+        return "CompatibilidadeMovimentos";
     }
 }

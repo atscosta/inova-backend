@@ -28,4 +28,9 @@ public class ClasseNivelPermitidoValidator implements ProcessoValidator {
     public String getTitle() {
         return "As classes processuais devem estar no último nível da hierarquia.";
     }
+    
+    @Override
+    public String getName() {
+        return "ClasseNivelPermitido";
+    }
 }

@@ -14,4 +14,5 @@ import java.lang.annotation.Target;
 @Component
 public @interface Validator {
     ValidatorType type() default ValidatorType.OUTROS;
+    boolean enabled() default true;
 }

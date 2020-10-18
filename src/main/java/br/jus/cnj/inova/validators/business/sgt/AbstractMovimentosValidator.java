@@ -14,10 +14,10 @@ import java.util.stream.Collectors;
 public abstract class AbstractMovimentosValidator {
 
     public ValidationResult validate(Processo processo) {
-        if (Objects.isNull(processo.getMovimento())) {
+        if (Objects.isNull(processo.getMovimentoList())) {
             return new ValidationResult(Severity.ERROR, "O processo não possui movimentações.");
         }
-        final var errors = processo.getMovimento().stream()
+        final var errors = processo.getMovimentoList().stream()
                 .map(this::validateMovimento)
                 .filter(ValidationResult::isError)
                 .collect(Collectors.toList());

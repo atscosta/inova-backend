@@ -32,7 +32,12 @@ public class AssuntoNivelPermitidoValidator extends AbstractAssuntosValidator im
     public String getTitle() {
         return "Todos os assuntos do processo devem estar localizados a partir do " + NIVEL_MINIMO + "º nível na hierarquia.";
     }
-
+    
+    @Override
+    public String getName() {
+        return "AssuntoNivelPermitido";
+    }
+    
     @Override
     protected String getErrorMessage() {
         return "Algum dos assuntos do processo não está em um nível permitido para utilização na hierarquia.";

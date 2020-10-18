@@ -26,8 +26,9 @@ public class MovimentoNivelPermitidoValidator extends AbstractMovimentosValidato
         } else {
             return this.sgtClient.isUltimoNivel(codigoMovimentoNacional.get(), TipoItemEnum.MOVIMENTO) ?
                     new ValidationResult() :
-                    new ValidationResult(Severity.ERROR, String.format("O movimento %d não está em um nível hierárquico" +
-                            " válido para ser utilizado", codigoMovimentoNacional.get()));
+                    new ValidationResult(Severity.ERROR,
+                        String.format("O movimento %d não está em um nível hierárquico válido para ser utilizado",
+                            codigoMovimentoNacional.get()));
         }
     }
 
@@ -35,7 +36,12 @@ public class MovimentoNivelPermitidoValidator extends AbstractMovimentosValidato
     public String getTitle() {
         return "Todos os movimentos do processo devem estar localizados no último nível na hierarquia.";
     }
-
+    
+    @Override
+    public String getName() {
+        return "MovimentoNivelPermitido";
+    }
+    
     @Override
     protected String getErrorMessage() {
         return "Algum dos movimentos do processo não está em um nível permitido para utilização na hierarquia.";
