@@ -35,9 +35,13 @@ public class UnidadeJudiciariaController {
                                                     @RequestParam(required = false) Integer skip,
                                                     @RequestParam(required = false) Integer size) {
 
-        return processoService.findAllByUnidadeJudiciaria(Mono.just(unidadeJudiciaria))
-                .skip(Optional.ofNullable(skip).orElse(0))
-                .take(Optional.ofNullable(size).orElse(30));
+        Flux<Processo> processoFlux = processoService
+                .findAllByUnidadeJudiciaria(Mono.just(unidadeJudiciaria))
+                .skip(Optional.ofNullable(skip).orElse(0));
+
+        return Optional.ofNullable(size)
+                .map(processoFlux::take)
+                .orElse(processoFlux);
     }
 
 }
