@@ -28,7 +28,7 @@ public class TribunalService {
         return this.repository.findBySigla(sigla);
     }
 
-    public Tribunal findByCodigo(String codigo) {
+    public Mono<Tribunal> findByCodigo(String codigo) {
         return this.repository.findFirstByCodigo(codigo);
     }
 }

@@ -27,4 +27,8 @@ public class ProcessoService {
     public Mono<Processo> findById(String id) {
         return repository.findById(id);
     }
+
+    public Mono<Long> countByCodigoUnidadeJudiciaria(String codigoUnidadeJudiciaria) {
+        return this.repository.countByDadosBasicosOrgaoJulgadorCodigoOrgao(codigoUnidadeJudiciaria);
+    }
 }
