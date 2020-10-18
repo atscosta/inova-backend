@@ -13,8 +13,6 @@ import java.lang.annotation.Target;
 @Documented
 @Component
 public @interface Validator {
-    ValidatorPriority priority() default ValidatorPriority.UNDEFINED;
     ValidatorType type() default ValidatorType.OUTROS;
-    ValidatorType[] types() default {ValidatorType.OUTROS};
     boolean enabled() default true;
 }

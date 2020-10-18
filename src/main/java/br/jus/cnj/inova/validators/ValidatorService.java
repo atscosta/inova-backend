@@ -1,10 +1,10 @@
 package br.jus.cnj.inova.validators;
 
+import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
-
-import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Service;
 
@@ -23,13 +23,36 @@ public class ValidatorService {
     }
     
     List<ProcessoValidator> getAllByEnabledValidators(boolean enabled) {
-        return this.validatorsManager.getAllValidators().stream()
-            .filter(filterEnabled(enabled))
+        return this.validatorsManager.getAllValidators().parallelStream()
+            .filter(filterByEnabled(enabled))
             .collect(Collectors.toList());
     }
     
+    void enableValidator(@NotNull String name, Boolean enabled) {
+        this.validatorsManager.getAllValidators().parallelStream()
+            .filter(filterByName(name))
+            .forEach(setEnabledProcessoValidator(enabled));
+    }
+    
+    ProcessoValidator findOneByName(@NotNull String name) {
+        return this.validatorsManager.getAllValidators().parallelStream()
+            .filter(filterByName(name))
+            .findFirst()
+            .orElseThrow();
+    }
+    
     @NotNull
-    private Predicate<ProcessoValidator> filterEnabled(boolean enabled) {
+    private Consumer<ProcessoValidator> setEnabledProcessoValidator(Boolean enabled) {
+        return processoValidator -> processoValidator.setEnabled(enabled);
+    }
+    
+    @NotNull
+    private Predicate<ProcessoValidator> filterByEnabled(boolean enabled) {
         return processoValidator -> processoValidator.isEnabled() == enabled;
+    }
+    
+    @NotNull
+    private Predicate<ProcessoValidator> filterByName(String name) {
+        return processoValidator -> name.equalsIgnoreCase(processoValidator.getName());
     }
 }

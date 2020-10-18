@@ -10,11 +10,10 @@ import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.cnj.inova.validators.Validator;
 import br.jus.cnj.inova.validators.ValidatorType;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
-import lombok.RequiredArgsConstructor;
-
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
+import lombok.RequiredArgsConstructor;
 
 @Validator(type = ValidatorType.ASSUNTOS)
 @RequiredArgsConstructor
