@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0a"
+  },
+  "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+  "descricao": "JUSTIÇA DO TRABALHO"
+},{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0b"
+  },
+  "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+  "descricao": "JUSTIÇA ELEITORAL"
+},{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0c"
+  },
+  "codigo": "2674801600a0f60e49a22c20c5992f92",
+  "descricao": "JUSTIÇA ESTADUAL"
+},{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0d"
+  },
+  "codigo": "267b8a413136deb82ba06d40ac94076e",
+  "descricao": "JUSTIÇA FEDERAL"
+},{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0e"
+  },
+  "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+  "descricao": "JUSTIÇA MILITAR ESTADUAL"
+},{
+  "_id": {
+    "$oid": "5f84c2de1f34a42c681c8e0f"
+  },
+  "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+  "descricao": "TRIBUNAIS SUPERIORES"
+}]
