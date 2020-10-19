@@ -14,15 +14,19 @@ public class ValidatorService {
 
     private final ValidatorsManager validatorsManager;
 
-    List<ProcessoValidator> getAllValidators(){
+    public List<ProcessoValidator> getAllValidators(){
         return this.validatorsManager.getAllValidators();
     }
     
-    List<ProcessoValidator> getValidatorsByType(ValidatorType type) {
+    public List<ProcessoValidator> getAllValidatorsByType(ValidatorType type) {
         return this.validatorsManager.getValidatorsByType(type);
     }
     
-    List<ProcessoValidator> getAllByEnabledValidators(boolean enabled) {
+    public List<ProcessoValidator> getAllByEnabledValidators() {
+        return this.getAllByEnabledValidators(true);
+    }
+    
+    public List<ProcessoValidator> getAllByEnabledValidators(boolean enabled) {
         return this.validatorsManager.getAllValidators().parallelStream()
             .filter(filterByEnabled(enabled))
             .collect(Collectors.toList());

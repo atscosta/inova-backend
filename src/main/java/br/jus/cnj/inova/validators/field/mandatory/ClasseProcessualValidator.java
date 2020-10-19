@@ -11,7 +11,7 @@ public class ClasseProcessualValidator extends CamposObrigatoriosValidator {
     
     @Override
     public ValidationResult validate(Processo processo) {
-        final var validationResult = super.validate(processo,
+        final var validationResult = super.validateCampoNulo(
             processo.getDadosBasicos().getClasseProcessual(), "Classe Processual");
         
         if (validationResult.isSuccess() && processo.getDadosBasicos().getClasseProcessual() == 0) {

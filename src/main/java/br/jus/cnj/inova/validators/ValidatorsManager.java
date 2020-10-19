@@ -12,7 +12,7 @@ public class ValidatorsManager {
 
     private final Map<ValidatorType, List<ProcessoValidator>> validatorsMap = new EnumMap<>(ValidatorType.class);
 
-    public void register(ProcessoValidator validator) {
+    void register(ProcessoValidator validator) {
         final var type = validator.getValidatorType();
         final List<ProcessoValidator> validatorsList = Optional.ofNullable(this.validatorsMap.get(type))
                 .orElseGet(ArrayList::new);
@@ -20,11 +20,11 @@ public class ValidatorsManager {
         this.validatorsMap.put(type, validatorsList);
     }
 
-    public List<ProcessoValidator> getValidatorsByType(ValidatorType type) {
+    List<ProcessoValidator> getValidatorsByType(ValidatorType type) {
         return this.validatorsMap.get(type);
     }
-
-    public List<ProcessoValidator> getAllValidators() {
+    
+    List<ProcessoValidator> getAllValidators() {
         return this.validatorsMap.values().stream()
                 .flatMap(Collection::stream)
                 .collect(Collectors.toList());

@@ -23,7 +23,7 @@ class ValidatorServiceTest {
     
     @Test
     void findByTipo() {
-        final var validatorsAssunto = service.getValidatorsByType(ValidatorType.ASSUNTOS);
+        final var validatorsAssunto = service.getAllValidatorsByType(ValidatorType.ASSUNTOS);
         assertTrue(validatorsAssunto.stream().allMatch(v-> ValidatorType.ASSUNTOS.equals(v.getValidatorType())));
     }
     

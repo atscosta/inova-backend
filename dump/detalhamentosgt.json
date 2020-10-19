@@ -1,0 +1,398 @@
+[{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5c6"
+  },
+  "key": "just_es_1grau",
+  "descricao": "Justiça Estadual - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5c7"
+  },
+  "key": "just_es_2grau",
+  "descricao": "Justiça Estadual - Segundo Grau",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5c8"
+  },
+  "key": "just_es_juizado_es",
+  "descricao": "Justiça Estadual - Juizado Especial",
+  "grau": "JE",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5c9"
+  },
+  "key": "just_es_juizado_es_fp",
+  "descricao": "Justiça Estadual - Juizado Especial da Fazenda Pública",
+  "grau": "JE",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5ca"
+  },
+  "key": "just_es_turmas",
+  "descricao": "Justiça Estadual - Turmas Especiais",
+  "grau": "TR",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5cb"
+  },
+  "key": "just_tu_es_un",
+  "descricao": "Justiça Estadual - Turma Estadual de Uniformização",
+  "grau": "TR",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5cc"
+  },
+  "key": "just_es_1grau_mil",
+  "descricao": "Justiça Estadual (Competência Militar) - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5cd"
+  },
+  "key": "just_es_2grau_mil",
+  "descricao": "Justiça Estadual (Competência Militar) - Segundo Grau",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5ce"
+  },
+  "key": "just_fed_1grau",
+  "descricao": "Justiça Federal - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5cf"
+  },
+  "key": "just_fed_2grau",
+  "descricao": "Justiça Federal - Segundo Grau",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d0"
+  },
+  "key": "just_fed_juizado_es",
+  "descricao": "Justiça Federal - Juizado Especial",
+  "grau": "JE",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d1"
+  },
+  "key": "just_fed_turmas",
+  "descricao": "Justiça Federal - Turmas Especiais",
+  "grau": "TR",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d2"
+  },
+  "key": "just_fed_regional",
+  "descricao": "Justiça Federal - Turma Regional de Uniformização",
+  "grau": "TR",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d3"
+  },
+  "key": "just_fed_nacional",
+  "descricao": "Justiça Federal - Turma Nacional de Uniformização",
+  "grau": "TR",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d4"
+  },
+  "key": "cjf",
+  "descricao": "Conselho da Justiça Federal",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    },
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d5"
+  },
+  "key": "just_trab_1grau",
+  "descricao": "Justiça do Trabalho - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d6"
+  },
+  "key": "just_trab_2grau",
+  "descricao": "Justiça do Trabalho - Segundo Grau",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d7"
+  },
+  "key": "just_trab_csjt",
+  "descricao": "Conselho Superior da Justiça do Trabalho",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    },
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d8"
+  },
+  "key": "just_trab_tst",
+  "descricao": "Tribunal Superior do Trabalho",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    },
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5d9"
+  },
+  "key": "just_mil_uniao_1grau",
+  "descricao": "Justiça Militar da União - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "4f4e462ceec53f02ff7e61c1551d087b",
+      "descricao": "JUSTIÇA MILITAR DA UNIÃO"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5da"
+  },
+  "key": "just_mil_uniao_stm",
+  "descricao": "Superior Tribunal Militar",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "4f4e462ceec53f02ff7e61c1551d087b",
+      "descricao": "JUSTIÇA MILITAR DA UNIÃO"
+    },
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5db"
+  },
+  "key": "just_mil_est_1grau",
+  "descricao": "Justiça Militar Estadual - Primeiro Grau",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+      "descricao": "JUSTIÇA MILITAR ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5dc"
+  },
+  "key": "just_mil_est_tjm",
+  "descricao": "Tribunal de Justiça Militar",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+      "descricao": "JUSTIÇA MILITAR ESTADUAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5dd"
+  },
+  "key": "just_elei_1grau",
+  "descricao": "Justiça Eleitoral - Zonas Eleitorais",
+  "grau": "G1",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5de"
+  },
+  "key": "just_elei_2grau",
+  "descricao": "Tribunal Regional Eleitoral",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5df"
+  },
+  "key": "just_elei_tse",
+  "descricao": "Tribunal Superior Eleitoral",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    },
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5e0"
+  },
+  "key": "cnj",
+  "descricao": "Conselho Nacional de Justiça",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5e1"
+  },
+  "key": "stj",
+  "descricao": "Superior Tribunal de Justiça",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "5f864d6969f2410edcbfe5e2"
+  },
+  "key": "stf",
+  "descricao": "Supremo Tribunal Federal",
+  "grau": "G2",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ]
+}]

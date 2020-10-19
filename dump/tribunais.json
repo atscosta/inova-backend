@@ -1,0 +1,1383 @@
+[{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c3"
+  },
+  "codigo": "d563fe5080d9277e3030b65fad95c5f8",
+  "descricao": "TRT1",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "RJ"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c4"
+  },
+  "codigo": "e757cea0ae7e83eb52ca2dba4996138a",
+  "descricao": "TRT2",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c5"
+  },
+  "codigo": "44589ea6be57ed7e5056b7cb7e735182",
+  "descricao": "TRT3",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "MG"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c6"
+  },
+  "codigo": "b3ccb2dd78d18e868423d4e4796c9c9f",
+  "descricao": "TRT4",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "RS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c7"
+  },
+  "codigo": "c60728a271f1cf52b34ca53dd9285669",
+  "descricao": "TRT5",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "BA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c8"
+  },
+  "codigo": "6c4066cb1136816029b6073c587884c3",
+  "descricao": "TRT6",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "PE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85c9"
+  },
+  "codigo": "32594830520cd36f6bd77a3e445affbb",
+  "descricao": "TRT7",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "CE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ca"
+  },
+  "codigo": "c9479fc6defd9ad75ba9b800c63e780e",
+  "descricao": "TRT8",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "AP",
+    "PA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85cb"
+  },
+  "codigo": "30a5e134e2dcf3967bc000f24b10b453",
+  "descricao": "TRT9",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "PR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85cc"
+  },
+  "codigo": "d34a068c7b16590cf0a393f2fd2d57a6",
+  "descricao": "TRT10",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "DF",
+    "TO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85cd"
+  },
+  "codigo": "302db30048e247b51a35fc1a7ba82a47",
+  "descricao": "TRT11",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "AM",
+    "RR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ce"
+  },
+  "codigo": "ab1268d0a4736af761f6f488d8d1bc69",
+  "descricao": "TRT12",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "SC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85cf"
+  },
+  "codigo": "7e1c32a1d83a4db97a7f3b15b1d1128f",
+  "descricao": "TRT13",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "PB"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d0"
+  },
+  "codigo": "ed912729956fe58076d0dd880db68ff6",
+  "descricao": "TRT14",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "AC",
+    "RO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d1"
+  },
+  "codigo": "f8c19f1ae698146be04c459cadc0df09",
+  "descricao": "TRT15",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d2"
+  },
+  "codigo": "4faffa21aa6eadc349f065d5d5988d33",
+  "descricao": "TRT16",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "MA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d3"
+  },
+  "codigo": "1c2d5c48639ee7203fd73bfa026e090f",
+  "descricao": "TRT17",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "ES"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d4"
+  },
+  "codigo": "0597e8620d7323d958e61c3d5e69aeb4",
+  "descricao": "TRT18",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "GO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d5"
+  },
+  "codigo": "8441326b87b55832f15a02a55a7ce987",
+  "descricao": "TRT19",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "AL"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d6"
+  },
+  "codigo": "8a4a87b6fa6d8dbbc8617412b98b7d28",
+  "descricao": "TRT20",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "SE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d7"
+  },
+  "codigo": "68810966fda7cef869b7b82fb73cf29f",
+  "descricao": "TRT21",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "RN"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d8"
+  },
+  "codigo": "b3c1dee7b75cbf67dfd7469609ab2247",
+  "descricao": "TRT22",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "PI"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85d9"
+  },
+  "codigo": "15df1db5668108e75c5587d65fe66aaf",
+  "descricao": "TRT23",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "MT"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85da"
+  },
+  "codigo": "e1e8395049a41462ac14691453258a20",
+  "descricao": "TRT24",
+  "justicas": [
+    {
+      "codigo": "3de0cc01ed3af54d008ee37ddcbac722",
+      "descricao": "JUSTIÇA DO TRABALHO"
+    }
+  ],
+  "ufs": [
+    "MS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85db"
+  },
+  "codigo": "0f69ac4b1af08fd40f622c7516ef3439",
+  "descricao": "TRE-AC",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "AC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85dc"
+  },
+  "codigo": "bef6ba699231381cd4340a94fedfae60",
+  "descricao": "TRE-AL",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "AL"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85dd"
+  },
+  "codigo": "4c933071892dbeae176a24bc377c0630",
+  "descricao": "TRE-AM",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "AM"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85de"
+  },
+  "codigo": "95968b57486365ee03d0700ff684b0e7",
+  "descricao": "TRE-AP",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "AP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85df"
+  },
+  "codigo": "46071f9262fc01cba731c03c10023dcd",
+  "descricao": "TRE-BA",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "BA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e0"
+  },
+  "codigo": "6204666eed6988411ae7671d4933d504",
+  "descricao": "TRE-CE",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "CE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e1"
+  },
+  "codigo": "c0daa66284c88049e763b105bbe990cc",
+  "descricao": "TRE-DF",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "DF"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e2"
+  },
+  "codigo": "a668060e0c4a939923dc582ef97e37c9",
+  "descricao": "TRE-ES",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "ES"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e3"
+  },
+  "codigo": "5f44228b9b7778ae1a9bedf605c91a7c",
+  "descricao": "TRE-GO",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "GO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e4"
+  },
+  "codigo": "fa688884210f96cef536ee2fdff23ec6",
+  "descricao": "TRE-MA",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "MA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e5"
+  },
+  "codigo": "2c55f03090fa91b3dc7b4437660a3c07",
+  "descricao": "TRE-MG",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "MG"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e6"
+  },
+  "codigo": "6c5a07354d08dd30a3eb0ae68414ba7c",
+  "descricao": "TRE-MS",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "MS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e7"
+  },
+  "codigo": "7bce479a54021d8461738759d12b9ac3",
+  "descricao": "TRE-MT",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "MT"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e8"
+  },
+  "codigo": "6989a72f08cb65109b97423596247ac8",
+  "descricao": "TRE-PA",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "PA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85e9"
+  },
+  "codigo": "ea6138335863d4040379613d32127c75",
+  "descricao": "TRE-PB",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "PB"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ea"
+  },
+  "codigo": "757d77bc4b5dc0b5e768e8065a489d75",
+  "descricao": "TRE-PE",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "PE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85eb"
+  },
+  "codigo": "f0d5a43b388f8af07e49a4af0ca4daf5",
+  "descricao": "TRE-PI",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "PI"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ec"
+  },
+  "codigo": "3aaf0d67bc40b55c8546d8737fe19e10",
+  "descricao": "TRE-PR",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "PR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ed"
+  },
+  "codigo": "3162564cb53c85ee646cbd4ad4a33ded",
+  "descricao": "TRE-RJ",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "RJ"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ee"
+  },
+  "codigo": "1f5a278b36c4056d8d261b190a5d0c71",
+  "descricao": "TRE-RN",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "RN"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ef"
+  },
+  "codigo": "56729ddbf0819476324ebe8709925bcf",
+  "descricao": "TRE-RO",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "RO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f0"
+  },
+  "codigo": "2fe8eae41f7b9f3bc03ff3575dfe0b35",
+  "descricao": "TRE-RR",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "RR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f1"
+  },
+  "codigo": "960053532037b4af8d1a181cf1680858",
+  "descricao": "TRE-RS",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "RS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f2"
+  },
+  "codigo": "6a4d0527e3958e752bc4da34301f2da1",
+  "descricao": "TRE-SC",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "SC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f3"
+  },
+  "codigo": "99a46098b306814f8d0153ccea74f586",
+  "descricao": "TRE-SE",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "SE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f4"
+  },
+  "codigo": "18200226d7cc3551dff683b7ab5f69fd",
+  "descricao": "TRE-SP",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f5"
+  },
+  "codigo": "1291fc04c05581f3039c0ba111f29889",
+  "descricao": "TRE-TO",
+  "justicas": [
+    {
+      "codigo": "8fc00c7ee0b1739a37c596103ad9ce4e",
+      "descricao": "JUSTIÇA ELEITORAL"
+    }
+  ],
+  "ufs": [
+    "TO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f6"
+  },
+  "codigo": "53385e9389c6a6b94ea0640f2f0301d5",
+  "descricao": "TJAC",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "AC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f7"
+  },
+  "codigo": "44034c8fca0632c71eec0063a31366fe",
+  "descricao": "TJAL",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "AL"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f8"
+  },
+  "codigo": "859cae5503f9b786926b45d9c566ab06",
+  "descricao": "TJAM",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "AM"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85f9"
+  },
+  "codigo": "5783c38d40955a08a04c5740ad0cde0e",
+  "descricao": "TJAP",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "AP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85fa"
+  },
+  "codigo": "98f1e4f235fc15e72ff8fd85b8baf86b",
+  "descricao": "TJBA",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "BA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85fb"
+  },
+  "codigo": "62aacb553bf3b51b6748151853aae387",
+  "descricao": "TJCE",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "CE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85fc"
+  },
+  "codigo": "a8d81c7fbdd60b761f42ecb9b97d693c",
+  "descricao": "TJDFT",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "DF"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85fd"
+  },
+  "codigo": "bc46cc6d189f61266823ea32c7d7cc03",
+  "descricao": "TJES",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "ES"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85fe"
+  },
+  "codigo": "95293f97855a6dc6340729c18f22621a",
+  "descricao": "TJGO",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "GO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d85ff"
+  },
+  "codigo": "d7ea121c57bb08177ab06caf018bfa70",
+  "descricao": "TJMA",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "MA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8600"
+  },
+  "codigo": "26c727a06d57fa3619d6caa9267e8cf5",
+  "descricao": "TJMG",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "MG"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8601"
+  },
+  "codigo": "3ae162465fc4eaaba5d34767482c0a3b",
+  "descricao": "TJMS",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "MS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8602"
+  },
+  "codigo": "b0f503ab40b44e1e1882e37e877f1593",
+  "descricao": "TJMT",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "MT"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8603"
+  },
+  "codigo": "9f08ac27ee50add0ff74336313e8446e",
+  "descricao": "TJPA",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "PA"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8604"
+  },
+  "codigo": "55fd2cfcac08900de4e499c94ffc2bca",
+  "descricao": "TJPB",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "PB"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8605"
+  },
+  "codigo": "88c813b3acdaa0a2895ceb34fe365d88",
+  "descricao": "TJPE",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "PE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8606"
+  },
+  "codigo": "18e92feb70d62a044eeb1c019c27559d",
+  "descricao": "TJPI",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "PI"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8607"
+  },
+  "codigo": "8b6ee5e7db39afd4816f664530467791",
+  "descricao": "TJPR",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "PR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8608"
+  },
+  "codigo": "f1efd0da4a4e7bae243ee0889bf3f203",
+  "descricao": "TJRJ",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RJ"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8609"
+  },
+  "codigo": "926251068e4a7bf04438c33d47a39717",
+  "descricao": "TJRN",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RN"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860a"
+  },
+  "codigo": "bda465eeea1f2dfb86a4ccb21847cfb0",
+  "descricao": "TJRO",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860b"
+  },
+  "codigo": "5fcbb879c5510cf2750b96c989144d3b",
+  "descricao": "TJRR",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RR"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860c"
+  },
+  "codigo": "fe6c045083101fa352328e2c2fc86511",
+  "descricao": "TJRS",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860d"
+  },
+  "codigo": "fdff521edb71d73ba944c9614b34d272",
+  "descricao": "TJSC",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "SC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860e"
+  },
+  "codigo": "6f58f092f465e6cbb95cc2253441acc1",
+  "descricao": "TJSE",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "SE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d860f"
+  },
+  "codigo": "113fa9dde77ae0e2607aa9f388b8596c",
+  "descricao": "TJSP",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8610"
+  },
+  "codigo": "31fdbd080fb7ec31e5ee7d89cf225173",
+  "descricao": "TJTO",
+  "justicas": [
+    {
+      "codigo": "2674801600a0f60e49a22c20c5992f92",
+      "descricao": "JUSTIÇA ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "TO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8611"
+  },
+  "codigo": "348b937e0fe4bffcc3a049930501507d",
+  "descricao": "TRF1",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ],
+  "ufs": [
+    "AC",
+    "AM",
+    "AP",
+    "BA",
+    "DF",
+    "GO",
+    "MA",
+    "MG",
+    "MT",
+    "PA",
+    "PI",
+    "RO",
+    "RR",
+    "TO"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8612"
+  },
+  "codigo": "b303abcbd40b34510f188805d35b5436",
+  "descricao": "TRF2",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ],
+  "ufs": [
+    "ES",
+    "RJ"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8613"
+  },
+  "codigo": "cef7253f4dd6f6a7912a08b6f58e409d",
+  "descricao": "TRF3",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ],
+  "ufs": [
+    "MS",
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8614"
+  },
+  "codigo": "a3fd19745adb763d42b45760dbd1894b",
+  "descricao": "TRF4",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ],
+  "ufs": [
+    "PR",
+    "RS",
+    "SC"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8615"
+  },
+  "codigo": "ac35567b1cc0b301a82164651e0228d2",
+  "descricao": "TRF5",
+  "justicas": [
+    {
+      "codigo": "267b8a413136deb82ba06d40ac94076e",
+      "descricao": "JUSTIÇA FEDERAL"
+    }
+  ],
+  "ufs": [
+    "AL",
+    "CE",
+    "DF",
+    "PB",
+    "PE",
+    "RN",
+    "SE"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8616"
+  },
+  "codigo": "40adcd4c4aeacf848b92d0a0c17b432a",
+  "descricao": "TJMMG",
+  "justicas": [
+    {
+      "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+      "descricao": "JUSTIÇA MILITAR ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "MG"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8617"
+  },
+  "codigo": "98d837ad48ebb6edb7f231c180117cea",
+  "descricao": "TJMRS",
+  "justicas": [
+    {
+      "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+      "descricao": "JUSTIÇA MILITAR ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "RS"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8618"
+  },
+  "codigo": "185d8ce3b192def1a69aa49d883a96ef",
+  "descricao": "TJMSP",
+  "justicas": [
+    {
+      "codigo": "277d8c4197b743fe1b6007b8aa1bbeaf",
+      "descricao": "JUSTIÇA MILITAR ESTADUAL"
+    }
+  ],
+  "ufs": [
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d8619"
+  },
+  "codigo": "35d32bfb8b8fa4cd48f80116be99867a",
+  "descricao": "STJ",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ],
+  "ufs": [
+    "-"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d861a"
+  },
+  "codigo": "0c2132b36166716de0d0220567fb911f",
+  "descricao": "STM",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ],
+  "ufs": [
+    "AM",
+    "DF",
+    "RJ",
+    "RS",
+    "SP"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d861b"
+  },
+  "codigo": "778375587ff90a4c277c3a61becd768e",
+  "descricao": "TSE",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ],
+  "ufs": [
+    "-"
+  ]
+},{
+  "_id": {
+    "$oid": "5f89e5e165812f12e82d861c"
+  },
+  "codigo": "46589dbc497478193d0fc922e5421196",
+  "descricao": "TST",
+  "justicas": [
+    {
+      "codigo": "74bb2f1a51bb3cf5370d62aebb2ef3e6",
+      "descricao": "TRIBUNAIS SUPERIORES"
+    }
+  ],
+  "ufs": [
+    "-",
+    "DF"
+  ]
+}]
