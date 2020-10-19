@@ -21,7 +21,9 @@ public class ProcessoService {
     }
 
     public Flux<Processo> findAllByUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria) {
-        return repository.findAllByUnidadeJudiciaria(codUnidadeJudiciaria);
+        final var codLong = repository.findAllByUnidadeJudiciaria(codUnidadeJudiciaria);
+        final var codString = repository.findAllByUnidadeJudiciariaStr(codUnidadeJudiciaria.map(String::valueOf));
+        return Flux.concat(codLong, codString);
     }
 
     public Mono<Processo> findById(String id) {
