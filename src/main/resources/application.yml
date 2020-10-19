@@ -19,3 +19,4 @@ sgt-client:
 server:
   servlet:
     context-path: cnj-inova
+windowSize: 10

@@ -4,6 +4,7 @@ import br.jus.cnj.inova.processo.Processo;
 import br.jus.cnj.inova.processo.capa.DadosBasicos;
 import br.jus.cnj.inova.processo.capa.OrgaoJulgador;
 import br.jus.cnj.inova.validators.Validation;
+import java.util.List;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
@@ -24,9 +25,9 @@ public class Resultado {
     private Long classeProcessual;
     private Long codOrgaoJulgador;
 
-    private Set<Validation> validations;
+    private List<Validation> validations;
 
-    public Resultado(Processo processo, Set<Validation> validations) {
+    public Resultado(Processo processo, List<Validation> validations) {
         this.id = processo.getId();
 
         Optional<DadosBasicos> dadosBasicosOptional = Optional.of(processo.getDadosBasicos());
