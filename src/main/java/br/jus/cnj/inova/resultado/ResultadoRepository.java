@@ -10,6 +10,10 @@ public interface ResultadoRepository extends ReactiveMongoRepository<Resultado, 
 
     @Query("{'processo.$id': ObjectId('?0')}")
     Flux<Resultado> findByIdProcesso(String idProcesso);
+
     Mono<Long> countByCodOrgaoJulgador(Long codOrgaoJulgador);
+
+    @Query(value = "{'codOrgaoJulgador': ?0, 'validations.result.success': false}", count = true)
+    Mono<Long> countPossuemFalhasPorOrgaoJulgador(Long codOrgaoJulgador);
 }
     
