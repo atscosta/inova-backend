@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/validadores")
 public class ValidatorRestController {
-
+    
     private final ValidatorService service;
     
     @GetMapping
@@ -41,7 +41,7 @@ public class ValidatorRestController {
     
     @GetMapping(params = "type")
     public List<ProcessoValidator> listarPorTipo(@RequestParam ValidatorType type) {
-        return this.service.getValidatorsByType(type);
+        return this.service.getAllValidatorsByType(type);
     }
     
 }

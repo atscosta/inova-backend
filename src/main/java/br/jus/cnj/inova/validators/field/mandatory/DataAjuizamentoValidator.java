@@ -11,7 +11,7 @@ public class DataAjuizamentoValidator extends CamposObrigatoriosValidator {
     
     @Override
     public ValidationResult validate(Processo processo) {
-        final var validationResult = super.validate(processo,
+        final var validationResult = super.validateCampoNulo(
             processo.getDadosBasicos().getDataAjuizamento(), "Data Ajuizamento");
         
         if (validationResult.isSuccess()) {

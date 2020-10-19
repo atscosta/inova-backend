@@ -6,17 +6,17 @@ import br.jus.cnj.inova.validators.Severity;
 import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.cnj.inova.validators.Validator;
 import br.jus.cnj.inova.validators.ValidatorType;
+import org.jetbrains.annotations.Nullable;
 
 @Validator(type = ValidatorType.FIELD)
 public class CamposObrigatoriosValidator implements ProcessoValidator {
     
-    protected ValidationResult validate(Processo processo, Object campo, String nomeCampo) {
-        final var validationResult = this.validate(processo);
-        if (validationResult.isSuccess() && campo == null){
+    protected ValidationResult validateCampoNulo(@Nullable Object campo, String nomeCampo) {
+        if (campo == null){
             return new ValidationResult(Severity.ERROR,
                 String.format("O campo %s é de preenchimento obrigatório, mas não foi informado", nomeCampo));
         }
-        return validationResult;
+        return new ValidationResult();
     }
     
     @Override
