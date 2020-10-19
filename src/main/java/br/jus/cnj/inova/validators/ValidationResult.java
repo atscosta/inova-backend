@@ -6,10 +6,10 @@ import java.util.List;
 
 @Data
 public class ValidationResult {
-    private final boolean success;
-    private final Severity severity;
-    private final String message;
-    private final List<ValidationResult> causedBy;
+    private boolean success;
+    private Severity severity;
+    private String message;
+    private List<ValidationResult> causedBy;
 
     public ValidationResult() {
         this(true, null, null, null);
