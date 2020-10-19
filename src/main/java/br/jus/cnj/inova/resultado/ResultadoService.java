@@ -65,4 +65,8 @@ public class ResultadoService {
     public Flux<Resultado> processar(FiltroResultadoTO filtro) {
         return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()), ValidatorType.MOVIMENTOS);
     }
+
+    public Mono<Long> countByCodigoUnidadeJudiciaria(Long codOrgaoJulgador) {
+        return this.repository.countByCodOrgaoJulgador(codOrgaoJulgador);
+    }
 }

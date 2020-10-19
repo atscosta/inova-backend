@@ -15,7 +15,7 @@ public class ResumoUnidadeJudiciariaController {
     private final ResumoUnidadeJudiciariaService service;
 
     @GetMapping
-    public Mono<ResumoUnidadeJudiciaria> findByCodigoUnidadeJudiciaria(@PathVariable String codigo) {
+    public Mono<ResumoUnidadeJudiciaria> findByCodigoUnidadeJudiciaria(@PathVariable Long codigo) {
         return this.service.findByCodigoUnidadeJudiciaria(codigo);
     }
 }
