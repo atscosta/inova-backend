@@ -16,7 +16,7 @@ public class ResumoUnidadeJudiciariaService {
 
     public Mono<ResumoUnidadeJudiciaria> findByCodigoUnidadeJudiciaria(Long codUnidadeJudiciaria) {
         Mono<Long> codUnidadeMono = Mono.just(codUnidadeJudiciaria);
-        Mono<Long> qtdProcessos = processoService.countByCodigoUnidadeJudiciaria(codUnidadeJudiciaria);
+        Mono<Long> qtdProcessos = processoService.countAllByUnidadeJudiciaria(Mono.just(codUnidadeJudiciaria));
         Mono<Long> qtdProcessosValidados = resultadoService.countByCodigoUnidadeJudiciaria(codUnidadeJudiciaria);
         Mono<Long> qtdProcessosValidadosSucesso = resultadoService.countValidadosComSucesso(codUnidadeJudiciaria);
         Mono<Long> qtdProcessosValidadosErro = resultadoService.countValidadosComErro(codUnidadeJudiciaria);

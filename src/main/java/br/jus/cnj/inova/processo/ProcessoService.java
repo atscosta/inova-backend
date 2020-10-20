@@ -26,11 +26,13 @@ public class ProcessoService {
         return Flux.concat(codLong, codString);
     }
 
-    public Mono<Processo> findById(String id) {
-        return repository.findById(id);
+    public Mono<Long> countAllByUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria) {
+        final var codLong = repository.countAllByUnidadeJudiciaria(codUnidadeJudiciaria);
+        final var codString = repository.countAllByUnidadeJudiciariaStr(codUnidadeJudiciaria.map(String::valueOf));
+        return Flux.concat(codLong, codString).reduce(Long::sum);
     }
 
-    public Mono<Long> countByCodigoUnidadeJudiciaria(Long codigoUnidadeJudiciaria) {
-        return this.repository.countByDadosBasicosOrgaoJulgadorCodigoOrgao(codigoUnidadeJudiciaria);
+    public Mono<Processo> findById(String id) {
+        return repository.findById(id);
     }
 }

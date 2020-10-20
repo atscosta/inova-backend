@@ -21,4 +21,9 @@ public interface ProcessoRepository extends ReactiveMongoRepository<Processo, St
 
     Flux<Processo> findAllBySiglaTribunal(Mono<String> sigla);
 
+    @Query(value = "{'dadosBasicos.orgaoJulgador.codigoOrgao': ?0}", count = true)
+    Mono<Long> countAllByUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria);
+
+    @Query(value = "{'dadosBasicos.orgaoJulgador.codigoOrgao': ?0}", count = true)
+    Mono<Long> countAllByUnidadeJudiciariaStr(Mono<String> map);
 }

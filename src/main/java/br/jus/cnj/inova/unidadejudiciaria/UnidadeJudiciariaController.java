@@ -51,4 +51,8 @@ public class UnidadeJudiciariaController {
                 .orElse(processoFlux.flatMap(this.processoConverter::convert));
     }
 
+    @GetMapping(value = "{unidadeJudiciaria}/numeroTotalProcessos", produces = MediaType.APPLICATION_JSON_VALUE)
+    public Mono<Long> countResultadoByIdProcesso(@PathVariable Long unidadeJudiciaria) {
+        return processoService.countAllByUnidadeJudiciaria(Mono.just(unidadeJudiciaria));
+    }
 }
