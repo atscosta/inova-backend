@@ -11,7 +11,7 @@
     </parent>
     <groupId>br.jus.cnj</groupId>
     <artifactId>inova</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <name>CNJ Inova</name>
     <description>Inspect Data for Datajud</description>
 
@@ -20,10 +20,27 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>br.com.marcellopassos</groupId>
             <artifactId>sgt-soap-client</artifactId>
             <version>1.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/sgt-soap-client-1.0.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>exksoap</groupId>
+            <artifactId>exksoap2</artifactId>
+            <version>1.0.3.1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/exksoap2-1.0.3.1.jar</systemPath>
+        </dependency>
+        <dependency>
+            <groupId>exksoap</groupId>
+            <artifactId>ksoap2-android-assembly</artifactId>
+            <version>3.6.4</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/ksoap2-android-assembly-3.6.4.jar</systemPath>
         </dependency>
 
         <dependency>
@@ -112,6 +129,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <includeSystemScope>true</includeSystemScope>
+                </configuration>
             </plugin>
         </plugins>
     </build>
