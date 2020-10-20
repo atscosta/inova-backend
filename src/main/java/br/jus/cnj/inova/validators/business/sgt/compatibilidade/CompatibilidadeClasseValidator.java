@@ -13,7 +13,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 
 @Log4j2
-@Validator(type = ValidatorType.CLASSES)
+@Validator(type = ValidatorType.UNIDADE_JUDICIARIA)
 @RequiredArgsConstructor
 public class CompatibilidadeClasseValidator implements ProcessoValidator {
 

@@ -20,5 +20,10 @@ public class OrgaoJulgadorValidator extends CamposObrigatoriosValidator {
         }
         return validationResult;
     }
+
+    @Override
+    public String getTitle() {
+        return "O campo 'órgão julgador' deve estar preenchido.";
+    }
     
 }

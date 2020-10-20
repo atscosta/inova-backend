@@ -20,5 +20,10 @@ public class ClasseProcessualValidator extends CamposObrigatoriosValidator {
         }
         return validationResult;
     }
+
+    @Override
+    public String getTitle() {
+        return "O campo 'classe processual' deve estar preenchido.";
+    }
     
 }

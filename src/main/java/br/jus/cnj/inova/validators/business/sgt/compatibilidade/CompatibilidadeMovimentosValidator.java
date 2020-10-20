@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-@Validator(type = ValidatorType.MOVIMENTOS)
+@Validator(type = ValidatorType.UNIDADE_JUDICIARIA)
 @RequiredArgsConstructor
 public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
 
@@ -36,11 +36,11 @@ public class CompatibilidadeMovimentosValidator implements ProcessoValidator {
     }
 
     private List<ValidationResult> getErrors(Processo processo, UnidadeJudiciaria unidadeJudiciaria) {
-        if (Objects.isNull(processo.getMovimentoList())) {
+        if (Objects.isNull(processo.getMovimento())) {
             return Collections.singletonList(new ValidationResult(Severity.ERROR,
                     "O processo não possui movimentações."));
         }
-        return processo.getMovimentoList().stream()
+        return processo.getMovimento().stream()
                 .map(Movimento::getMovimentoNacional)
                 .filter(Objects::nonNull)
                 .map(MovimentoNacional::getCodigoNacional)

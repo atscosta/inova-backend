@@ -19,5 +19,9 @@ public class SiglaTribunalValidator extends CamposObrigatoriosValidator {
         }
         return validationResult;
     }
-    
+
+    @Override
+    public String getTitle() {
+        return "O campo 'sigla do tribunal' deve estar preenchido.";
+    }
 }

@@ -22,7 +22,8 @@ public class AssuntoNivelPermitidoValidator extends AbstractAssuntosValidator im
     @Override
     protected ValidationResult validateAssunto(Assunto assunto) {
         final var nivel = this.sgtClient.getNivel(assunto.getCodigoNacional(), TipoItemEnum.ASSUNTO);
-        return nivel >= NIVEL_MINIMO ?
+        final var ultimoNivel = this.sgtClient.isUltimoNivel(assunto.getCodigoNacional(), TipoItemEnum.ASSUNTO);
+        return nivel >= NIVEL_MINIMO || ultimoNivel ?
                 new ValidationResult() :
                 new ValidationResult(Severity.ERROR, String.format("O assunto %d não está em um nível hierárquico" +
                         " válido para ser utilizado", assunto.getCodigoNacional()));
