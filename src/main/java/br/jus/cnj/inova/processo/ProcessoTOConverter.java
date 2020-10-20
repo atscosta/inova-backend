@@ -16,7 +16,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 @Log4j2
@@ -49,7 +48,7 @@ public class ProcessoTOConverter {
         return classe.map(LocalItemSgt::getNome).orElse(null);
     }
 
-    private List<ValidationResult> getFailures(Set<Validation> validations) {
+    private List<ValidationResult> getFailures(List<Validation> validations) {
         return validations.stream()
                 .map(Validation::getResult)
                 .filter(ValidationResult::isError)

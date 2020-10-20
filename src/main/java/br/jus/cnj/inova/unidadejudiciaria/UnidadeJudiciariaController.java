@@ -47,7 +47,7 @@ public class UnidadeJudiciariaController {
                 .skip(Optional.ofNullable(skip).orElse(0));
 
         return Optional.ofNullable(size)
-                .map(s -> processoFlux.take(s).flatMap(this.processoConverter::convert))
+                .map(s -> processoFlux.take(s).concatMap(this.processoConverter::convert))
                 .orElse(processoFlux.flatMap(this.processoConverter::convert));
     }
 

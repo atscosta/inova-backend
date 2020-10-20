@@ -18,10 +18,11 @@ public class ProcessoController {
 
     private final ProcessoService processoService;
     private final ResultadoService resultadoService;
+    private final ProcessoTOConverter processoConverter;
 
     @GetMapping(value = "{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<Processo> findById(@PathVariable String id) {
-        return processoService.findById(id);
+    public Mono<ProcessoTO> findById(@PathVariable String id) {
+        return processoService.findById(id).flatMap(this.processoConverter::convert);
     }
 
     @GetMapping(value = "{idProcesso}/resultados", produces = MediaType.APPLICATION_JSON_VALUE)

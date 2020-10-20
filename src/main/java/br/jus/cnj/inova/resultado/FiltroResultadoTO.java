@@ -1,6 +1,5 @@
 package br.jus.cnj.inova.resultado;
 
-import br.jus.cnj.inova.validators.ValidatorType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
