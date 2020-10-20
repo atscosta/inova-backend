@@ -7,16 +7,15 @@ import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidationResult;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoItemEnum;
 import br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.TipoPesquisaEnum;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.stereotype.Component;
-import reactor.core.publisher.Mono;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.stereotype.Component;
+import reactor.core.publisher.Mono;
 
 @Log4j2
 @Component
