@@ -5,12 +5,8 @@ import br.jus.cnj.inova.processo.ProcessoService;
 import br.jus.cnj.inova.validators.ProcessoValidator;
 import br.jus.cnj.inova.validators.Validation;
 import br.jus.cnj.inova.validators.ValidatorService;
-import br.jus.cnj.inova.validators.ValidatorType;
 import lombok.RequiredArgsConstructor;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
@@ -19,14 +15,13 @@ import reactor.core.scheduler.Schedulers;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.function.Function;
 
+@Log4j2
 @Service
 @RequiredArgsConstructor
 public class ResultadoService {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(ResultadoService.class);
-    private static final String VALIDATOR_ERROR = "Erro na execução do validador";
+    private static final String VALIDATOR_ERROR = "Erro na execução do validador: %s.";
 
     private final ResultadoRepository repository;
     private final ProcessoService processoService;
@@ -35,45 +30,36 @@ public class ResultadoService {
     @Value("${windowSize}")
     private int windowSize;
 
-    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria,
-                                                             @Nullable ValidatorType validatorType) {
-
-        final var validators = Optional.ofNullable(validatorType)
-                .map(this.validatorService::getAllValidatorsByType)
-                .orElse(this.validatorService.getAllByEnabledValidators());
-
-        return this.processoService
-                .findAllByUnidadeJudiciaria(codUnidadeJudiciaria)
-                .flatMap(processo -> this.validateByProcesso(processo, validators));
+    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria) {
+        return this.validateByCodigoUnidadeJudiciaria(codUnidadeJudiciaria,
+                this.validatorService.getAllByEnabledValidators());
     }
 
-    //XXX Paralelizar validacoes
+    public Flux<Resultado> validateByCodigoUnidadeJudiciaria(Mono<Long> codUnidadeJudiciaria,
+                                                             List<ProcessoValidator> processoValidators) {
+        return this.processoService
+                .findAllByUnidadeJudiciaria(codUnidadeJudiciaria)
+                .flatMap(processo -> this.validateByProcesso(processo, processoValidators));
+    }
+
+    public Mono<Resultado> validateByProcesso(Processo processo) {
+        return this.validateByProcesso(processo, this.validatorService.getAllByEnabledValidators());
+    }
+
     public Mono<Resultado> validateByProcesso(Processo processo, List<ProcessoValidator> processoValidators) {
-        final var validationResulList = Flux.fromIterable(processoValidators)
+        return Flux.fromIterable(processoValidators)
                 .window(this.windowSize)
                 .flatMap(validatorFlux -> validatorFlux
-                        .map(validateProcessoWithValidators(processo))
-                        .onErrorContinue((throwable, o) -> LOGGER.error(VALIDATOR_ERROR, throwable))
+                        .map(validator -> new Validation(validator, validator.validate(processo)))
+                        .onErrorContinue((throwable, obj) -> log.error(String.format(VALIDATOR_ERROR, throwable.getMessage()), throwable))
                 )
                 .subscribeOn(Schedulers.parallel())
                 .collectList()
-                .block();
-
-        return this.save(processo, validationResulList);
-    }
-
-    @NotNull
-    private Function<ProcessoValidator, Validation> validateProcessoWithValidators(Processo processo) {
-        return v -> new Validation(v, v.validate(processo));
-    }
-
-    public Mono<Resultado> save(Processo processo, List<Validation> validations) {
-        return this.save(Mono.just(processo), validations);
+                .flatMap(resultList -> this.save(Mono.just(processo), resultList));
     }
 
     public Mono<Resultado> save(Mono<Processo> processoMono, List<Validation> validations) {
-        return processoMono.map(p -> new Resultado(p, validations))
-                .flatMap(repository::save);
+        return processoMono.map(p -> new Resultado(p, validations)).flatMap(repository::save);
     }
 
     public Mono<Resultado> findById(String idProcesso) {
@@ -81,14 +67,10 @@ public class ResultadoService {
     }
 
     public Flux<Resultado> processar(FiltroResultadoTO filtro) {
-
-        if (filtro.getIdProcesso() != null) {
-            return processoService.findById(filtro.getIdProcesso())
-                    .flatMapMany(processo -> this.validateByProcesso(processo, this.validatorService.getAllValidators()));
-        }
-
-        return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()), null);
-
+        return Optional.ofNullable(filtro.getIdProcesso())
+                .map(this.processoService::findById)
+                .map(processoMono -> processoMono.flatMapMany(this::validateByProcesso))
+                .orElse(this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria())));
     }
 
     public Mono<Long> countByCodigoUnidadeJudiciaria(Long codOrgaoJulgador) {
