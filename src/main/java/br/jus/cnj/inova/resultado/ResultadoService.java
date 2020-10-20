@@ -81,7 +81,14 @@ public class ResultadoService {
     }
 
     public Flux<Resultado> processar(FiltroResultadoTO filtro) {
+
+        if(filtro.getIdProcesso() != null ) {
+            return processoService.findById(filtro.getIdProcesso())
+                    .flatMapMany(processo -> this.validateByProcesso(processo, this.validatorService.getAllValidators()));
+        }
+
         return this.validateByCodigoUnidadeJudiciaria(Mono.just(filtro.getCodUnidadeJudiciaria()), null);
+
     }
 
     public Mono<Long> countByCodigoUnidadeJudiciaria(Long codOrgaoJulgador) {

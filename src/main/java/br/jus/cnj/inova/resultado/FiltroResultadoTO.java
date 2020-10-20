@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 public class FiltroResultadoTO {
 
     private long codUnidadeJudiciaria;
-    private ValidatorType validadores;
+    private String idProcesso;
 }
