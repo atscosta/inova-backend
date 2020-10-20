@@ -10,7 +10,7 @@ spring:
       config: classpath:ehcache.xml
 logging:
   level:
-    root: error
+    root: warn
     org.springframework.data.mongodb.core.ReactiveMongoTemplate: off
 sgt-client:
   url: https://www.cnj.jus.br/sgt/sgt_ws.php
