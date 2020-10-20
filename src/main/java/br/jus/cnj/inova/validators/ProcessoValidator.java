@@ -15,7 +15,7 @@ public interface ProcessoValidator {
     String getTitle();
     
     default String getName() {
-        return this.getClass().getName().replace("Validator", "");
+        return this.getClass().getSimpleName().replace("Validator", "");
     }
     
     default ValidatorType getValidatorType() {
