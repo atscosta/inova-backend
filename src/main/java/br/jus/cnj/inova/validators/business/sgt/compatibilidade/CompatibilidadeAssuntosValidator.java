@@ -15,7 +15,7 @@ import java.util.Objects;
 import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 
-@Validator(type = ValidatorType.ASSUNTOS)
+@Validator(type = ValidatorType.UNIDADE_JUDICIARIA)
 @RequiredArgsConstructor
 public class CompatibilidadeAssuntosValidator implements ProcessoValidator {
 
