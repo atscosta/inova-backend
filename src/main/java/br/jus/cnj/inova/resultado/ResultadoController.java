@@ -18,7 +18,9 @@ public class ResultadoController {
 
     @PostMapping(produces = MediaType.APPLICATION_STREAM_JSON_VALUE)
     public Flux<Resultado> save(@RequestBody FiltroResultadoTO filtroResultadoTO) {
-        return this.resultadoService.processar(filtroResultadoTO);
+        return this.resultadoService.processar(filtroResultadoTO)
+                .publish()
+                .autoConnect();
     }
 
 }
