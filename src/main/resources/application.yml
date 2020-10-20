@@ -17,3 +17,5 @@ sgt-client:
   timeout: 60000
   cache-ttl: 86400
 windowSize: 10
+server:
+  port: 80
