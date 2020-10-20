@@ -57,7 +57,7 @@
     </cache>
 
     <cache alias="getItemCache">
-        <value-type>br.jus.tjpb.libs.sgtsoapcient.pesquisaritem.ItemSgt</value-type>
+        <value-type>br.jus.cnj.inova.sgt.LocalItemSgt</value-type>
         <expiry>
             <ttl unit="hours">24</ttl>
         </expiry>

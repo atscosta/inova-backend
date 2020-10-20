@@ -104,4 +104,18 @@ public class ResultadoService {
         Mono<Long> validadosComErroMono = this.countValidadosComErro(codigo);
         return Mono.zip(totalValidadosMono, validadosComErroMono, (total, erros) -> total - erros);
     }
+
+    public Mono<Long> countByCodigoUnidadeJudiciaria(Long codOrgaoJulgador) {
+        return this.repository.countByCodOrgaoJulgador(codOrgaoJulgador);
+    }
+
+    public Mono<Long> countValidadosComErro(Long codigo) {
+        return this.repository.countPossuemFalhasPorOrgaoJulgador(codigo);
+    }
+
+    public Mono<Long> countValidadosComSucesso(Long codigo) {
+        Mono<Long> totalValidadosMono = this.countByCodigoUnidadeJudiciaria(codigo);
+        Mono<Long> validadosComErroMono = this.countValidadosComErro(codigo);
+        return Mono.zip(totalValidadosMono, validadosComErroMono, (total, erros) -> total - erros);
+    }
 }
