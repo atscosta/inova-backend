@@ -11,14 +11,12 @@ Esta primeira versão da aplicação é **totalmente funcional**. Nela você enc
 * Execução das validações de processos por Unidade Judiciária ou Processo individual
 * Detalhamento dos resultados para cada processo
 
-Para mais detalhes, acesse nossa Documentação.
-
 ## Instruções para executar a aplicação  
 
 * Necessário [Java Development Kit 11 LST (JDK)](https://adoptopenjdk.net/) e definir a variável de ambiente **JAVA_HOME**;
 * Clone o projeto executando o comando `git clone https://github.com/atscosta/inova-backend.git`;
 * Navegue para o diretório `inova backend`;
-* No Windows: execute `mvnw.cmd spring-boot:run`/ No Linux: execute `.mvnw -spring-boot:run`;
+* No Windows: execute `mvnw.cmd spring-boot:run` / No Linux: execute `.mvnw -spring-boot:run`;
 * Acesse `http://localhost:8080/swagger-ui.html` para listar os endpoints do backend.
 
 ### Recursos úteis
