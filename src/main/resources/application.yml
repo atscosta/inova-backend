@@ -18,4 +18,11 @@ sgt-client:
   cache-ttl: 86400
 windowSize: 10
 server:
-  port: 8080
+  port: 8443
+  ssl:
+    key-store-type: JKS
+    key-password: 123456
+    key-alias: keystore
+    key-store: classpath:keystore/keystore.jks
+    key-store-password: 123456
+    enabled: true
