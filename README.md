@@ -1,30 +1,29 @@
-# inova-backend
+![screenshot](http://www.datajud.kinghost.net/assets/img/validador.svg)
 
-## sgt-soap-client
+A fim de resolver o problema do Datajud em sanitizar os dados processuais enviados por cada tribunal, nosso projeto se baseia em uma coleção gerenciável de validadores que é executada para cada processo remetido ao Datajud. As validações acontecem através de processamento paralelo e assíncrono. Os resultados podem ser acompanhados em tempo real o progresso e a taxa de sucesso.
 
-Como resolver o problema das dependências exksoap:exksoap e exksoap:ksoap2-android-assembly
+Toda essa informação, consolidada de milhares de processos, é exibida de forma muito eficiente em gráficos que permitem a fácil leitura e organização de ações e mutirões para saneamento dos dados. A navegação pela aplicação é simples e amigável. Organizamos uma estrutura hierárquica de justiça, iniciando pelo Tipo de Justiça, em seguida o Tribunal e, por último, a Unidade Judiciária.
 
-1. Adicione o plugin (código ao final) ao projeto `sgt-soap-client`. Ele vai copiar as dependências para dentro do pacote final. 
-2. Dê um build no projeto sgt-soap-client `mvn clean compile`. Apesar de dar erro, será criada a estrutura dos diretórios no repositório local.
-3. Navegue até a pasta referente a `groupId/artifactId/version`. Adicione os `.jars` e crie um arquivo `pom.xml` básico, apenas informando os dados de `groupId:artifactId:version`.
-4. Pronto. Ao tentar o build novamente em `sgt-soap-client`, o maven conseguirá resolver a dependência e adicionar na pasta `lib` do pacote gerado. 
+Funcionalidades
+Esta primeira versão da aplicação é **totalmente funcional**. Nela você encontra:
 
-> Adicione o plugin (código ao final) ao projeto `sgt-soap-client`.
+* 20 validadores implementados nas seguintes categorias: Assuntos, Classes, Movimentos, Unidades Judiciárias e Campos Obrigatórios
+* Execução das validações de processos por Unidade Judiciária ou Processo individual
+* Detalhamento dos resultados para cada processo
 
-```
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-dependency-plugin</artifactId>
-    <executions>
-        <execution>
-            <phase>install</phase>
-            <goals>
-                <goal>copy-dependencies</goal>
-            </goals>
-            <configuration>
-                <outputDirectory>${project.build.directory}/lib</outputDirectory>
-            </configuration>
-        </execution>
-    </executions>
-</plugin>
-```
+Para mais detalhes, acesse nossa Documentação.
+
+## Instruções para executar a aplicação  
+
+* Necessário [Java Development Kit 11 LST (JDK)](https://adoptopenjdk.net/) e definir a variável de ambiente **JAVA_HOME**;
+* Clone o projeto executando o comando `git clone https://github.com/atscosta/inova-backend.git`;
+* Navegue para o diretório `inova backend`;
+* No Windows: execute `mvnw.cmd spring-boot:run`/ No Linux: execute `.mvnw -spring-boot:run`;
+* Acesse `http://localhost:8080/swagger-ui.html` para listar os endpoints do backend.
+
+### Recursos úteis
+
+* [Documentação completa](https://docs.google.com/document/d/e/2PACX-1vSSKm1lRoDi2xBUiEwJn3TQpAf5-CHD_GPVQoKU9Xmf6VB0XEKobESMu55JSUsGJVo5GKWseh-OEUOU/pub)
+* [Demonstração](http://localhost:8080/swagger-ui.html)
+
+
