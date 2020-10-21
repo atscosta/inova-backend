@@ -1,0 +1,31 @@
+spring:
+  data:
+    mongodb:
+      host: mongodb.datajud.kinghost.net
+      database: datajud01
+      username: datajud01
+      password: datajud_pwd
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: WARN
+sgt-client:
+  url: https://www.cnj.jus.br/sgt/sgt_ws.php
+  enable-logging: true
+  timeout: 60000
+  cache-ttl: 86400
+windowSize: 10
+server:
+  port: 8080
+#  ssl:
+#    key-store-type: JKS
+#    key-password: 123456
+#    key-alias: keystore
+#    key-store: classpath:keystore/keystore.jks
+#    key-store-password: 123456
+#    enabled: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html

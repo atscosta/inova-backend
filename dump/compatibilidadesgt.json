@@ -1,0 +1,2601 @@
+[{
+  "_id": {
+    "$oid": "5f8cd262509627061005c080"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c081"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c082"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c083"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c084"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c085"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c086"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c087"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c088"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c089"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08a"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08b"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08c"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08d"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08e"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c08f"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c090"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c091"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c092"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c093"
+  },
+  "classe": {
+    "codigo": "00385",
+    "descricao": "EXECUÇÃO PENAL E DE MEDIDAS ALTERNATIVAS"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": false
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c094"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c095"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c096"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c097"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c098"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c099"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09a"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09b"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09c"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09d"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09e"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c09f"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a0"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a1"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a2"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a3"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a4"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a5"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a6"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a7"
+  },
+  "classe": {
+    "codigo": "00547",
+    "descricao": "JUIZADOS DA INFÂNCIA E DA JUVENTUDE"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a8"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0a9"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0aa"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ab"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ac"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ad"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ae"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0af"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b0"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b1"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b2"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b3"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b4"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b5"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b6"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b7"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b8"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0b9"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ba"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0bb"
+  },
+  "classe": {
+    "codigo": "01198",
+    "descricao": "PROCEDIMENTOS ADMINISTRATIVOS"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0bc"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0bd"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0be"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0bf"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c0"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c1"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c2"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c3"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c4"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c5"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c6"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c7"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c8"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0c9"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ca"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0cb"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0cc"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0cd"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ce"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0cf"
+  },
+  "classe": {
+    "codigo": "11099",
+    "descricao": "PROCEDIMENTOS PRÉ-PROCESSUAIS DE RESOLUÇÃO CONSENSUAL DE CONFLITOS"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d0"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d1"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d2"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d3"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d4"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d5"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d6"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d7"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d8"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0d9"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0da"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0db"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0dc"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0dd"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0de"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0df"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e0"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e1"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e2"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e3"
+  },
+  "classe": {
+    "codigo": "00002",
+    "descricao": "PROCESSO CÍVEL E DO TRABALHO"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e4"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e5"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e6"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e7"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e8"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0e9"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ea"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0eb"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ec"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ed"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ee"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ef"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f0"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f1"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f2"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f3"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f4"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f5"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f6"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f7"
+  },
+  "classe": {
+    "codigo": "00268",
+    "descricao": "PROCESSO CRIMINAL"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f8"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0f9"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0fa"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0fb"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0fc"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0fd"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0fe"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c0ff"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c100"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c101"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c102"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c103"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c104"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c105"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c106"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c107"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c108"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c109"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10a"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10b"
+  },
+  "classe": {
+    "codigo": "11427",
+    "descricao": "PROCESSO ELEITORAL"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10c"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10d"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10e"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c10f"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c110"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c111"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c112"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c113"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c114"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c115"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c116"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c117"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c118"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c119"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11a"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11b"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11c"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11d"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11e"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c11f"
+  },
+  "classe": {
+    "codigo": "11028",
+    "descricao": "PROCESSO MILITAR"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c120"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c121"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c122"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c123"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c124"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c125"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c126"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c127"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c128"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c129"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12a"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12b"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12c"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12d"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12e"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c12f"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c130"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c131"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c132"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c133"
+  },
+  "classe": {
+    "codigo": "00005",
+    "descricao": "SUPERIOR TRIBUNAL DE JUSTIÇA"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c134"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "09985",
+    "descricao": "DIREITO ADMINISTRATIVO E OUTRAS MATÉRIAS DE DIREITO PÚBLICO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c135"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "12734",
+    "descricao": "DIREITO ASSISTENCIAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c136"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "00899",
+    "descricao": "DIREITO CIVIL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c137"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "09633",
+    "descricao": "DIREITO DA CRIANÇA E DO ADOLESCENTE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c138"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "12480",
+    "descricao": "DIREITO DA SAÚDE"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c139"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "01156",
+    "descricao": "DIREITO DO CONSUMIDOR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13a"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "00864",
+    "descricao": "DIREITO DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13b"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "11428",
+    "descricao": "DIREITO ELEITORAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13c"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "10739",
+    "descricao": "DIREITO ELEITORAL E PROCESSO ELEITORAL DO STF"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13d"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "06191",
+    "descricao": "DIREITO INTERNACIONAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13e"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "01146",
+    "descricao": "DIREITO MARÍTIMO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c13f"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "00287",
+    "descricao": "DIREITO PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c140"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "11068",
+    "descricao": "DIREITO PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c141"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "00195",
+    "descricao": "DIREITO PREVIDENCIÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c142"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "08826",
+    "descricao": "DIREITO PROCESSUAL CIVIL E DO TRABALHO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c143"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "01209",
+    "descricao": "DIREITO PROCESSUAL PENAL"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c144"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "11049",
+    "descricao": "DIREITO PROCESSUAL PENAL MILITAR"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c145"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "00014",
+    "descricao": "DIREITO TRIBUTÁRIO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c146"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "12467",
+    "descricao": "QUESTÕES DE ALTA COMPLEXIDADE, GRANDE IMPACTO E REPERCUSSÃO"
+  },
+  "compativeis": true
+},{
+  "_id": {
+    "$oid": "5f8cd262509627061005c147"
+  },
+  "classe": {
+    "codigo": "01310",
+    "descricao": "SUPREMO TRIBUNAL FEDERAL"
+  },
+  "assunto": {
+    "codigo": "07724",
+    "descricao": "REGISTROS PÚBLICOS"
+  },
+  "compativeis": true
+}]
