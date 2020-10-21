@@ -24,6 +24,6 @@ Para mais detalhes, acesse nossa Documentação.
 ### Recursos úteis
 
 * [Documentação completa](https://docs.google.com/document/d/e/2PACX-1vSSKm1lRoDi2xBUiEwJn3TQpAf5-CHD_GPVQoKU9Xmf6VB0XEKobESMu55JSUsGJVo5GKWseh-OEUOU/pub)
-* [Demonstração](http://localhost:8080/swagger-ui.html)
+* [Demonstração](http://157.230.223.248:8080/swagger-ui.html)
 
 
