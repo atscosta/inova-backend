@@ -1,3 +1,10 @@
+server:
+  ssl:
+    key-store-type: PKCS12
+    key-store: classpath:keystore/inova.p12
+    key-password: changeit
+    key-alias: inova
+    enabled: true
 spring:
   data:
     mongodb:
@@ -10,11 +17,11 @@ spring:
       config: classpath:ehcache.xml
 logging:
   level:
-    root: warn
-    org.springframework.data.mongodb.core.ReactiveMongoTemplate: warn
+    root: info
 sgt-client:
   url: https://www.cnj.jus.br/sgt/sgt_ws.php
   enable-logging: true
   timeout: 60000
   cache-ttl: 86400
 windowSize: 10
+
